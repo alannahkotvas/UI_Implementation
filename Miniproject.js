@@ -39,4 +39,5 @@ function down(){
     drawDot()
 }
 
-// wowww hihi
+// wowww hihi 
+//fjoewijfiowj
