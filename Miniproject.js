@@ -38,3 +38,5 @@ function down(){
     y += 10 // this goes down 
     drawDot()
 }
+
+// wowww hihi
