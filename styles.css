@@ -2,7 +2,24 @@ h1{
     /* add the top bar / icons here*/
 }
 
-.navbar ul{                                                  /* the colour block for our navbar */
+/* ================================================================= HEADER =================================================================*/
+/* HELP D: */
+.header img{
+    width: 200px; 
+}
+
+..header > .logo > img{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 0px;
+    padding: 0px;
+}
+
+             
+/* ================== navbar ======================*/
+
+.navbar ul{                               
     list-style-type: none;
     background-color: rgb(101, 124, 151);   
     margin: 0px;
