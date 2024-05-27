@@ -43,7 +43,7 @@
 }
 
              
-/* ================== navbar ======================*/
+/* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
     text-align: center; /* Ensure text-align is center */
@@ -54,22 +54,17 @@
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
-    margin: 0 auto; /* Center the ul within the navbar */
-    padding: 0;
     height: 50px; /* Set a height for the navbar */
 
     /* do we still need overflow: hidden; here*/
 }
 
-.navbar li {
-    margin: 0;
-    padding: 0;
-}
 
 .navbar a {
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-decoration: none;
-    padding: 15px 20px; /* Adjust padding for spacing */
+    padding: 15px 60px; /* Adjust padding for spacing */
     display: block;
 }
 
@@ -79,8 +74,17 @@
 .navbar li{
     float:left;
 }
+/* ================== search bar =========================================*/
 
-/* ================== Homepage body ======================*/
+
+
+
+
+
+
+
+
+/* ================== Homepage body =====================================*/
 /* main image*/
 
 .cover-image img{
@@ -94,18 +98,23 @@
     line-height:45px;
     font-size: 28px;
     text-align: center;
-    padding: 0px 250px;
+    padding: 20px 250px;
+    color: rgba(101, 124, 151, 1);
 }
 
-.cover-image h2{
+.cover-image h2 a{
+    text-decoration: underline;
     padding: 20px;
+    color: rgba(58, 80, 114, 1);
+    font-weight: bold;
 }
 
-.cover-image h2 :hover{
+.cover-image h2:hover{
     background-color: rgb(131, 158, 189) ;
 }
 
-/* =========== occasion ======= */
+
+/* ============================= occasion ============================================== */
 
 .occasion h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -114,6 +123,7 @@
     padding-top: 100px;
     padding-bottom: 30px;
     text-align: center;
+    color: rgba(58, 80, 114, 1);
 }
 
 div.scrollmenu a img {
@@ -133,7 +143,7 @@ div.scrollmenu a {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: rgba(58, 80, 114, 1);
     font-size: 30px;
     text-align: center;
     padding: 14px;
@@ -144,7 +154,7 @@ div.scrollmenu a:hover {
     background-color: #777;
 }
 
-/* =========== 3 photos ========== */
+/* ========================== 3 photos ==================================================== */
 .three-sections{
     background-color: white;
     overflow: auto;
@@ -157,7 +167,7 @@ div.scrollmenu a:hover {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: rgba(58, 80, 114, 1);
     font-size: 30px;
     text-align: center;
     padding: 10px;
@@ -168,4 +178,14 @@ div.scrollmenu a:hover {
     height: 490px;
     padding-top: 300px;
     padding: 0px 2px;
+}
+
+
+/* ============================ personalised balloons =========================== */
+.personalised-balloons img {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Set width to 100vw */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image does not exceed its original size */
 }
