@@ -61,6 +61,20 @@
     float:left;
 }
 
+
+/* ============================ INTRODUCTION ================================*/
+/*work on this sizing girl*/
+.introImage img{
+    height: 324px;
+}
+
+.title{
+    text-align: center;
+    
+}
+
+
+
 /* ============================ PRODUCTS ================================*/
 
  section{
