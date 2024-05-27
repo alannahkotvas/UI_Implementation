@@ -1,0 +1,41 @@
+
+/* ================================================================= HEADER =================================================================*/
+/* HELP D: */
+
+
+
+.header img{
+    width: 200px; 
+}
+
+.icons img{
+    width: 40px;
+    
+}
+ 
+  
+ 
+        
+             
+/* ================== navbar ======================*/
+
+.navbar ul{                               
+    list-style-type: none;
+    background-color: rgb(101, 124, 151);   
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{            /*can do alot more here for dropdown etc*/
+    background-color: rgb(131, 158, 189) ;
+}
+.navbar li{
+    float:left;
+}
