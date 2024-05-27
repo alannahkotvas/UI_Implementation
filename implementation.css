@@ -44,21 +44,35 @@
 
              
 /* ================== navbar ======================*/
-
-.navbar ul{                               
-    list-style-type: none;
-    background-color: rgb(101, 124, 151);   
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+.navbar {
+    background-color: rgb(101, 124, 151);
+    text-align: center; /* Ensure text-align is center */
 }
-.navbar a{
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 0 auto; /* Center the ul within the navbar */
+    padding: 0;
+    height: 50px; /* Set a height for the navbar */
+
+    /* do we still need overflow: hidden; here*/
+}
+
+.navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 15px 20px; /* Adjust padding for spacing */
     display: block;
-    text-align: center;
 }
+
 .navbar a:hover{            /*can do alot more here for dropdown etc*/
     background-color: rgb(131, 158, 189) ;
 }
