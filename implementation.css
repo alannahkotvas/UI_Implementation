@@ -12,10 +12,6 @@
     width: 40px;
     
 }
- 
-  
- 
-        
              
 /* ================== navbar ======================*/
 
@@ -38,4 +34,11 @@
 }
 .navbar li{
     float:left;
+}
+
+/* ================== Homepage body ======================*/
+/* main image*/
+
+.cover-image{
+    height
 }
