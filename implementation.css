@@ -104,3 +104,68 @@
 .cover-image h2 :hover{
     background-color: rgb(131, 158, 189) ;
 }
+
+/* =========== occasion ======= */
+
+.occasion h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+div.scrollmenu a img {
+    width: 330px; /* Adjust the width as needed */
+    margin-bottom: 10px;
+}
+
+div.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+  
+div.scrollmenu a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+  
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+/* =========== 3 photos ========== */
+.three-sections{
+    background-color: white;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.three-sections a{                    /* this is for the text */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.three-sections img{
+    height: 490px;
+    padding-top: 300px;
+    padding: 0px 2px;
+}
