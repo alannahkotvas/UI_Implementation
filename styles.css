@@ -1,20 +1,4 @@
-h1{
-    /* add the top bar / icons here*/
-}
 
-/* ================================================================= HEADER =================================================================*/
-/* HELP D: */
-.header img{
-    width: 150px; 
-}
-
-.header > .logo > img{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin: 0px;
-    padding: 0px;
-}
              
 /* ================== navbar ======================*/
 
@@ -38,6 +22,7 @@ h1{
 .navbar li{
     float:left;
 }
+
 
 
 
