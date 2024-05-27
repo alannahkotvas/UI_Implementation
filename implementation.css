@@ -1,8 +1,9 @@
+*{
+    margin: 0; /* remove default padding and margin */
+    padding: 0;
+}
 
 /* ================================================================= HEADER =================================================================*/
-/* HELP D: */
-
-
 
 .header {
     background-color: white;
@@ -68,6 +69,7 @@
 /* ================== Homepage body ======================*/
 /* main image*/
 
-.cover-image{
-    width: 1368px;
+.cover-image img{
+    position: relative;
+    width: 100%;
 }
