@@ -40,5 +40,6 @@
 /* main image*/
 
 .cover-image{
-    height
+    width: 1368px;
+    display:flex
 }
