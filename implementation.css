@@ -87,3 +87,13 @@
     position: relative;
     width: 100%;
 }
+.cover-image h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 19px;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
