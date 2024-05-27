@@ -1,17 +1,47 @@
+*{
+    margin: 0; /* remove default padding and margin */
+    padding: 0;
+}
 
 /* ================================================================= HEADER =================================================================*/
-/* HELP D: */
 
-
+.header {
+    background-color: white;
+    color: #fff;
+    padding: 10px 20px;
+}
 
 .header img{
-    width: 200px; 
+    width: 150px; 
 }
 
-.icons img{
-    width: 40px;
-    
+.logo-icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.logo {
+    width: 150px;
+}
+
+.icons {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.icons li {
+    margin: 0;
+}
+
+.icons li img {
+    height: 30px; /* Adjust the size of the icons */
+    width: 30px; 
+}
+
              
 /* ================== navbar ======================*/
 
@@ -39,6 +69,7 @@
 /* ================== Homepage body ======================*/
 /* main image*/
 
-.cover-image{
-    width: 1368px;
+.cover-image img{
+    position: relative;
+    width: 100%;
 }
