@@ -276,3 +276,64 @@
     cursor: pointer;
     
 }
+
+
+/* ====================================================== FOOTER =================================================================*/
+
+.footer-container{
+    background-color: #657C97;
+    padding-top: 20px;
+    margin-top: 20px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)*/
+    color: white;
+}
+
+.hours-contact{
+    display: flex;
+}
+
+.footer-container h1{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.contact-us{
+    list-style-type: none;
+    line-height: 1.8;
+    height: auto;
+    width: 50%;
+}
+
+.footer-container h2{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.hours{
+    list-style-type: none;
+    line-height: 1.8;
+    height:auto;
+    width: 50%;
+}
+
+hr{
+    width: 95%
+}
+
+.footer-container h3{
+    padding-left: 40px;
+    font-size: 20px;
+    letter-spacing: 1.5;
+}
+
+.footer-container h4{
+    font-size: 20px;
+    letter-spacing: 1.5;
+}
+
+.delivery-zones li{
+    margin-left: 40px;
+    padding-left: 10px;
+    line-height: 1.8;
+    height: auto;
+    width: 50%;
+}
