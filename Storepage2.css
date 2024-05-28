@@ -75,7 +75,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: rgb(219, 241, 255);
+    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +89,7 @@
 
 .gallery{
     flex-basis: 47%;
-    background: rgb(195, 162, 162);
+    background: white;
     transform: scale(1.08);
 }
 
@@ -179,3 +179,35 @@
 }
 
 /* quanity of item */
+
+.quanity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-select input{
+    background: rgb(255, 255, 255);
+    border: 1px solid #3A5072;
+    outline: 0;
+    margin-top: 30px;
+    padding: 8px 8px 8px 45px;
+    width: 50px;
+    border-radius: 0px;
+    font-size: 20px;
+}
+
+/* add to cart button*/
+
+form button{
+    background: #3A5072;
+    color: white;
+    font-size: 17px;
+    width: 70%;
+    padding: 20px;
+    border: 0px;
+    outline: 0px;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
