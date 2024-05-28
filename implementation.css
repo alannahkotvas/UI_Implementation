@@ -41,8 +41,6 @@
     height: 30px; /* Adjust the size of the icons */
     width: 30px; 
 }
-
-             
 /* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
@@ -61,7 +59,9 @@
 
 
 .navbar a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Mukta Vaani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
     color: white;
     text-decoration: none;
     padding: 15px 60px; /* Adjust padding for spacing */
@@ -93,7 +93,9 @@
 }
 .cover-image h1,
 .cover-image h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-weight: 100;
     line-height:45px;
     font-size: 28px;
@@ -117,8 +119,9 @@
 /* ============================= occasion ============================================== */
 
 .occasion h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 50px;
     padding-top: 100px;
     padding-bottom: 30px;
@@ -143,6 +146,9 @@ div.scrollmenu a {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     color: rgba(58, 80, 114, 1);
     font-size: 30px;
     text-align: center;
@@ -183,9 +189,13 @@ div.scrollmenu a:hover {
 
 /* ============================ personalised balloons =========================== */
 .personalised-balloons img {
-    margin: 0;
-    padding: 0;
-    width: 100vw; /* Set width to 100vw */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure the image does not exceed its original size */
+    width: 100vw;
+    padding-top: 100px;
+}
+
+.personalised-balloons h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(58, 80, 114, 1);
+    text-align: center;
 }
