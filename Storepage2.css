@@ -69,3 +69,150 @@
 .navbar li{
     float:left;
 }
+
+/* ================================================================= STOREPAGE 2 =================================================================*/
+/*image / background - .container contains everything within the pink box*/
+.container{
+    border-bottom: 1px solid rgb(101, 124, 151);
+    background: rgb(255, 235, 235);
+}
+
+.container img{
+    float: left;
+    padding-left: 8%;
+    height: 100%;
+    width: 150%;
+}
+
+
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+/*
+.gallery{
+    flex-basis: 47%;
+    background: white;
+    transform: scale(1.08);
+}
+
+.gallery img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+
+/* .details contains all the stuff on the right hand side in the white box */
+
+.details{
+    flex-basis: 50%;
+    background: white;
+    padding: 40px;
+    padding-left: 60px;
+    color: #3A5072;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.details h1{
+    color: #3A5072; 
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 150;
+}
+
+.details h2{
+    color:#3A5072;
+    font-size: 30px;
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif
+}
+
+.details form{
+    font-size: 13px;
+    font-weight: 100;
+}
+/* colour pick section */
+
+.colourselect{
+    align-items: center;
+    margin-top: 20px;
+}
+
+.colourselect p{
+    color: #3A5072;
+}
+
+.colourselect span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.colour-1{
+    background: #FFD688;
+}
+
+.colour-2{
+    background: #8FDEFF; 
+}
+
+.colour-3{
+    background: #B998FF
+}
+
+.colour-4{
+    background: #FF75C8
+}
+
+.colour-5{
+    background: #FF6C6C
+}
+
+.colourselect input{
+    display: none;
+}
+
+.colourselect input:checked +span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 5px #fff, 0 0 0 6px #3A5072;
+}
+
+/* quanity of item */
+
+.quanity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-select input{
+    background: rgb(255, 255, 255);
+    border: 1px solid #3A5072;
+    outline: 0;
+    margin-top: 30px;
+    padding: 8px 8px 8px 45px;
+    width: 50px;
+    border-radius: 0px;
+    font-size: 20px;
+}
+
+/* add to cart button*/
+
+form button{
+    background: #3A5072;
+    color: white;
+    font-size: 17px;
+    width: 70%;
+    padding: 20px;
+    border: 0px;
+    outline: 0px;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
