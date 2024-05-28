@@ -71,15 +71,19 @@
 }
 
 /* ================================================================= STOREPAGE 2 =================================================================*/
-/*image / background*/
+/*image / background - .container contains everything within the pink box*/
 .container{
-    width: 100%;
-    min-height: 100vh;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-bottom: 1px solid rgb(101, 124, 151);
+    background: rgb(255, 235, 235);
 }
+
+.container img{
+    float: left;
+    padding-left: 8%;
+    height: 100%;
+    width: 150%;
+}
+
 
 .product{
     width: 90%;
@@ -87,6 +91,7 @@
     display: flex;
 }
 
+/*
 .gallery{
     flex-basis: 47%;
     background: white;
@@ -99,7 +104,7 @@
     padding-top: 100px;
 }
 
-/*text */
+/* .details contains all the stuff on the right hand side in the white box */
 
 .details{
     flex-basis: 50%;
