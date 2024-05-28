@@ -65,7 +65,7 @@
     font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 15px 60px; /* Adjust padding for spacing */
+    padding: 10px 60px; /* Adjust padding for spacing */
     display: block;
 }
 
@@ -75,6 +75,8 @@
 .navbar li{
     float:left;
 }
+
+
 /* ================== search bar =========================================*/
 .search{
     width: max-content; /* width of the container is determined by the content within */
@@ -223,8 +225,31 @@ div.scrollmenu a:hover {
 }
 
 .personalised-balloons h1{
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(58, 80, 114, 1);
     text-align: center;
+    color: rgba(58, 80, 114, 1);
+}
+
+.personalised-balloons h2,
+.personalised-balloons h3{
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-weight: 100;
+    line-height:45px;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 250px;
+    color: rgba(101, 124, 151, 1);
+}
+
+.personalised-balloons h3{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    padding: 20px;
+    color: rgba(58, 80, 114, 1);
+    font-weight: 500;
 }
