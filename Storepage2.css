@@ -70,7 +70,7 @@
     float:left;
 }
 
-/* ================================================================= STOREPAGE 2 =================================================================*/
+/* ====================================================== STOREPAGE 2 =================================================================*/
 /*image / background - .container contains everything within the pink section*/
 .container{
     display: flex;
@@ -96,10 +96,8 @@
 
 .gallery img{
     display: block;
-    padding-top: 100px;
     height: auto;
-    width: auto;
-    object-fit: contain;
+    width: 400px;
 }
 
 /* .details contains all the stuff on the right hand side in the white box */
