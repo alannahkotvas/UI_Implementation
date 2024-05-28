@@ -76,9 +76,34 @@
     float:left;
 }
 /* ================== search bar =========================================*/
+.search{
+    width: max-content; /* width of the container is determined by the content within */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
 
+.search-icon img{
+    width: 20px;
+}
 
+.search-input{
+    font-size: 25px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 10px;
+    text-decoration: underline;
+    color: rgba(58, 80, 114, 1);
+    text-decoration-thickness: 2px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
 
+.search-input::placeholder {
+    color: rgba(58, 80, 114, 1); /* Change to the desired color */
+}
 
 
 
