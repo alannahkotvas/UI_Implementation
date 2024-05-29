@@ -34,24 +34,27 @@
 </nav>
 
 <!--================================================================ STOREPAGE 2 =================================================================-->
+
+<!--ship item info-->
 <body>
     <form>
-<div class=" container">
-    <div class="product">
+<div class="container">
+    <div class="shop-item">
         <div class="gallery">
-            <img src="Product Images/PersonalisedBalloon.png" alt="personalised balloon">
+            <img class="shop-item-image" src="Product Images/PersonalisedBalloon.png" alt="personalised balloon">
         </div>
-        <div class="details">
-            <h1>Personalised Bubble Balloons</h1>
-            <h2>$75.00</h2>
-            <h3>Want to say something? Say it your way with our beautiful trendy custom balloon designs. Simply follow the steps to 
-                make your own personalised boutique gift.</h3> <br>
-            <h4>Float time affected by hot and humid conditions</h4> 
+        <div class="shop-item-detail">
+            <span class="shop-item-title">Personalised Bubble Balloons</span>
+            <span class="shop-item-price">$75.00</span>
+            <span class="shop-item-message">Want to say something? Say it your way with our beautiful trendy custom balloon designs. Simply follow the steps to 
+                make your own personalised boutique gift.</span>
+            <span class="extra-info">Float time affected by hot and humid conditions</span> 
+
 <!--text form for message wanted-->
                 <div class="custom-message">
                     <label for="custom-message">What custom message do you want your balloon to have?</label>
                     <br>
-                    <input type="text" id="custom-message" placeholder="happy birthday!" maxlength="30" required>
+                    <input class="shop-item-message" type="text" id="custom-message" placeholder="happy birthday!" maxlength="30" required>
                 </div>
 
 
@@ -103,7 +106,7 @@
     </div>
     
     <!--add to cart-->
-    <button class="add-to-cart">Add to Cart</button>
+    <button class="btn btn-primary shop-item-button">Add to Cart</button>
  </div>
  <input type="submit">
     </form>    

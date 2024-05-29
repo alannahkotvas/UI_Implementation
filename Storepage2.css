@@ -85,7 +85,7 @@
     align-items: center;
 }
 
-.product{
+.shop-item{
     width: 100%;
     max-width: 750px;
     display: flex;
@@ -104,9 +104,9 @@
     width: 400px;
 }
 
-/* .details contains all the stuff on the right hand side in the white box */
+/* .details contains all the stuff on the right hand side in the white box i need to restyle after fixing titles and classes for js :'( */
 
-.details{
+.shop-item{
     flex-basis: 50%;
     background: white;
     padding: 40px;
@@ -117,35 +117,27 @@
     justify-content: center;
 }
 
-.details h1{
+.shop-item-title{
     color: #3A5072; 
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 150;
 }
 
-.details h2{
+.shop-item-price{
     color:#3A5072;
     font-size: 30px;
     font-weight: 700;
     font-family:'Times New Roman', Times, serif
 }
 
-.details h3{
+.shop-item-message{
     padding-top: 10px;
     font-weight: 1;
     font-size: 18px;
     padding-bottom: 60px;
 
 }
-
-.details h4{
-    font-weight: 100;
-    width: 600px;
-    border-bottom: 1px solid #657C97;
-    padding-bottom: 10px;
-}
-
 
 /* custom message form */
 
@@ -268,7 +260,7 @@
 
 /* add to cart button*/
 
-.add-to-cart{
+.shop-item-button{
     background: #3A5072;
     color: white;
     font-size: 17px;
