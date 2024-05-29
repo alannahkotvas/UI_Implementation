@@ -1,0 +1,284 @@
+/* ================================================================= HEADER =================================================================*/
+
+.header {
+    background-color: white;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header img{
+    width: 150px; 
+}
+
+.logo-icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.icons {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.icons li {
+    margin: 0;
+}
+
+.icons li img {
+    height: 30px; /* Adjust the size of the icons */
+    width: 30px; 
+}
+
+             
+/* ================== navbar ======================*/
+.navbar {
+    background-color: rgb(101, 124, 151);
+    text-align: center; /* Ensure text-align is center */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 50px; /* Set a height for the navbar */
+
+    /* do we still need overflow: hidden; here*/
+}
+
+
+.navbar a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 15px 60px; /* Adjust padding for spacing */
+    display: block;
+}
+
+.navbar a:hover{            /*can do alot more here for dropdown etc*/
+    background-color: rgb(131, 158, 189) ;
+}
+.navbar li{
+    float:left;
+}
+
+/* ====================================================== CART PAGE =================================================================*/
+/* - there is alot to keep track of so small key for me -
+ dropdownmenu= all
+dropdown=ul
+dropdownlist=dropdown
+
+Cart content section = whole cart section
+Cart items = both balloon items grouped
+Cart row = individual item + text grouped (both have the same class so styling will b identical
+
+Cart-item cart-column = the segment within the cart row that contains the image
+
+Cart-price cart-column= the segment within the cart row that contains the text, cost and quantity
+
+*/
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row{ /*edit this to edit each entire item segment*/
+    border-bottom: 1px solid #657C97;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.cart-item{
+    width: 50%;
+}
+
+.cart-price{
+    width: 20%;
+    font-size: 20px;
+    color: #3A5072;
+}
+
+.cart-quantity{
+    width: 40%;
+}
+
+.cart-item-image{
+    display: flex;
+    width: 100px;
+    height: auto;
+}
+
+.cart-item-title{
+    display: flex;
+    color: #657C97;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.btn-danger {
+    color: #3A5072;
+    background-color: #fff;
+    border: 1px solid #3A5072;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn-danger:hover{
+    transform: translateY(-5px); /* add cute animation later here - make button slightly smaller just cant remember off the top of my head*/
+} 
+
+.cart-quantity-input{
+    height: 35px;
+    width:50px;
+    border: none;
+    background-color: white;
+    color: #3A5072;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 25px;
+}
+
+.cart-row:last-child .cart-column{
+    border:none;
+}
+
+.cart-total{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.cart-total-title{
+    color: #3A5072;
+    font-size: 30px;
+}
+
+.cart-total-price{
+    color:#3A5072;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.cart-shipping{
+    display: flex;
+    color: #3A5072;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-purchase{
+    display: block;
+    color: white;
+    background-color: #3A5072;
+    border-radius: 4px;
+    padding: 15px 60px 15px 60px;
+    margin: 40px auto 80px auto;
+    font-size: 25px;
+}
+
+/* ====================================================== FOOTER =================================================================*/
+
+.footer-container{
+    background-color: #657C97;
+    padding-top: 20px;
+    margin-top: 20px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)*/
+    color: white;
+}
+
+.hours-contact{
+    display: flex;
+}
+
+.footer-container h1{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.contact-us{
+    list-style-type: none;
+    line-height: 1.8;
+    height: auto;
+    width: 50%;
+}
+
+.footer-container h2{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.hours{
+    list-style-type: none;
+    line-height: 1.8;
+    height:auto;
+    width: 50%;
+}
+
+hr{
+    width: 95%
+}
+
+.footer-container h3{
+    padding-left: 40px;
+    font-size: 20px;
+    letter-spacing: 1.5;
+}
+
+.footer-container h4{
+    font-size: 20px;
+    letter-spacing: 1.5;
+}
+
+.delivery-zones li{
+    margin-left: 40px;
+    padding-left: 10px;
+    line-height: 1.8;
+    height: auto;
+    width: 50%;
+}
+
+/*socials*/
+.socials-icons {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.socials-icons .icons {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.socials-icons .icons li {
+    margin: 0;
+}
+
+.socials-icons .icons li img {
+    height: 40px; /* Adjust the size of the icons */
+    width: 40px; 
+}
+
+.footer-container h5{
+    text-align: center;
+    padding-bottom: 10px;
+}
