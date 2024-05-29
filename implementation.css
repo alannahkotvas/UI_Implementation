@@ -322,7 +322,7 @@ div.scrollmenu a:hover {
     width: 100vw;
 }
 
-/* delivery */
+/* ============== delivery ===================== */
 .delivery h1{
     font-family: "Neuton", serif;
     font-weight: 400;
@@ -333,10 +333,37 @@ div.scrollmenu a:hover {
     padding-top: 100px;
 }
 
+.areas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.areas-one, .areas-two {
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.areas-one ul, .areas-two ul {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.areas-one ul li, .areas-two ul li {
+    margin: 5px 0;
+}
+
+
 .map img{
     display: flex;
     width: 100vw;
 }
+
 
 /* ====================================================== FOOTER =================================================================*/
 
