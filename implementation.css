@@ -383,14 +383,18 @@ div.scrollmenu a:hover {
     display: flex;
 }
 
-.footer-container h1, .footer-container h2{
+.footer-container h1, .footer-container h2, .footer-container h3, .delivery-zones h4{
     font-size: 30px;
     font-family: "Neuton", serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.contact-us, .hours{
+.footer-container h4{
+    padding-top: 60px;
+}
+
+.contact-us, .hours, .delivery-zones{
     font-family: "Mukta Vaani", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -398,28 +402,12 @@ div.scrollmenu a:hover {
     line-height: 1.8;
     height: auto;
     width: 50%;
+    padding-bottom: 60px;
 }
+
+
 hr{
-    width: 95%
-}
-
-.footer-container h3{
-    padding-left: 40px;
-    font-size: 20px;
-    letter-spacing: 1.5;
-}
-
-.footer-container h4{
-    font-size: 20px;
-    letter-spacing: 1.5;
-}
-
-.delivery-zones li{
-    margin-left: 40px;
-    padding-left: 10px;
-    line-height: 1.8;
-    height: auto;
-    width: 50%;
+    width: 97%
 }
 
 /*socials*/
@@ -436,7 +424,7 @@ hr{
     display: flex;
     gap: 10px;
     margin: 0;
-    padding: 0;
+    padding-right: 10px;
 }
 
 .socials-icons .icons li {
@@ -444,11 +432,15 @@ hr{
 }
 
 .socials-icons .icons li img {
-    height: 40px; /* Adjust the size of the icons */
-    width: 40px; 
+    height: 60px; /* Adjust the size of the icons */
+    width: 60px; 
 }
 
 .footer-container h5{
     text-align: center;
-    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    padding: 30px;
 }
