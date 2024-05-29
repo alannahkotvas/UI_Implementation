@@ -90,7 +90,8 @@ Cart-price cart-column= the segment within the cart row that contains the text, 
     display: flex;
     align-items: center;
     padding-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
+    
 }
 
 .cart-row{ /*edit this to edit each entire item segment*/
@@ -100,8 +101,17 @@ Cart-price cart-column= the segment within the cart row that contains the text, 
     display: flex;
 }
 
+.cart-text{
+    display: flex;
+    flex-direction: column;
+}
+
 .cart-item{
     width: 50%;
+}
+
+.cart-item-message{
+    color:#3A5072
 }
 
 .cart-price{
@@ -110,21 +120,18 @@ Cart-price cart-column= the segment within the cart row that contains the text, 
     color: #3A5072;
 }
 
-.cart-quantity{
+.cart-quantity-input{
     width: 40%;
 }
 
 .cart-item-image{
-    display: flex;
     width: 100px;
     height: auto;
 }
 
 .cart-item-title{
-    display: flex;
     color: #657C97;
     padding-top: 10px;
-    margin-left: 10px;
     font-size: 30px;
 }
 
@@ -133,9 +140,8 @@ Cart-price cart-column= the segment within the cart row that contains the text, 
     background-color: #fff;
     border: 1px solid #3A5072;
     border-radius: 4px;
-    padding: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px;
+    width: 200px;
 }
 
 .btn-danger:hover{
