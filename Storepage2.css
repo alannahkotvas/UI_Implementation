@@ -337,3 +337,29 @@ hr{
     height: auto;
     width: 50%;
 }
+
+/*socials*/
+
+
+.socials-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials-icons .icons {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.socials-icons .icons li {
+    margin: 0;
+}
+
+.socials-icons .icons li img {
+    height: 30px; /* Adjust the size of the icons */
+    width: 30px; 
+}
