@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=1368px">
     <title>The Balloon Crew</title>
     <link rel="stylesheet" href="Storepage2.css">
+    <script src="cart.js" async></script>
 </head>
 
 <!--=============== HEADER ====================-->
@@ -57,7 +58,7 @@
                     <p>Select the colour of your custom ballon:</p>
 
                     <label for="yellow">
-                        <input type="radio" name="colour" id="yellow">    
+                        <input type="radio" name="colour" id="yellow" required>    
                         <span class="colour-1"></span>
                     </label>
 
@@ -93,16 +94,17 @@
 </div>
 
  <!--quantity of items section-->
-                
- <div class="quantity-select">
-    <input type="number" value="1">
-</div>
-
-<!--add to cart-->
-<button class="add-to-cart">Add to Cart</button>
-
-</form>
-</body>
+ <div class="cart-number">
+    <div class="quantity-select">
+        <input type="number" value="1">
+    </div>
+    
+    <!--add to cart-->
+    <button class="add-to-cart">Add to Cart</button>
+ </div>
+ <input type="submit">
+    </form>    
+</body>          
 
 
 <!--================================================================ FOOTER =================================================================-->
