@@ -41,8 +41,6 @@
     height: 30px; /* Adjust the size of the icons */
     width: 30px; 
 }
-
-             
 /* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
@@ -61,10 +59,13 @@
 
 
 .navbar a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 15px 60px; /* Adjust padding for spacing */
+    padding: 10px 60px; /* Adjust padding for spacing */
     display: block;
 }
 
@@ -74,10 +75,37 @@
 .navbar li{
     float:left;
 }
+
+
 /* ================== search bar =========================================*/
+.search{
+    width: max-content; /* width of the container is determined by the content within */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
 
+.search-icon img{
+    width: 20px;
+}
 
+.search-input{
+    font-size: 25px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 10px;
+    text-decoration: underline;
+    color: rgba(58, 80, 114, 1);
+    text-decoration-thickness: 2px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
 
+.search-input::placeholder {
+    color: rgba(58, 80, 114, 1); /* Change to the desired color */
+}
 
 
 
@@ -93,20 +121,20 @@
 }
 .cover-image h1,
 .cover-image h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     line-height:45px;
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
-    padding: 20px 250px;
+    padding: 10px 250px;
     color: rgba(101, 124, 151, 1);
 }
 
 .cover-image h2 a{
     text-decoration: underline;
-    padding: 20px;
     color: rgba(58, 80, 114, 1);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .cover-image h2:hover{
@@ -117,8 +145,9 @@
 /* ============================= occasion ============================================== */
 
 .occasion h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 50px;
     padding-top: 100px;
     padding-bottom: 30px;
@@ -143,11 +172,14 @@ div.scrollmenu a {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     color: rgba(58, 80, 114, 1);
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     padding: 14px;
-    text-decoration: none;
+    text-decoration: underline;
 }
   
 div.scrollmenu a:hover {
@@ -167,11 +199,14 @@ div.scrollmenu a:hover {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     color: rgba(58, 80, 114, 1);
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     padding: 10px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .three-sections img{
@@ -183,9 +218,213 @@ div.scrollmenu a:hover {
 
 /* ============================ personalised balloons =========================== */
 .personalised-balloons img {
+    width: 100vw;
+    padding-top: 100px;
+}
+
+.personalised-balloons h1{
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(58, 80, 114, 1);
+}
+
+.personalised-balloons h2,
+.personalised-balloons h3{
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height:45px;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 250px;
+    color: rgba(101, 124, 151, 1);
+}
+
+.personalised-balloons h3 a{
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: rgba(58, 80, 114, 1);
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* ============ balloon decorations for parties ============ */
+.parties img{
+    width: 100vw;
+    padding-top: 100px;
+}
+
+.parties h1{
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(58, 80, 114, 1);
+}
+
+.parties h2,
+.parties h3{
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height:45px;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 250px;
+    color: rgba(101, 124, 151, 1);
+}
+
+.parties h3 a{
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: rgba(58, 80, 114, 1);
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+/* ============ brands that have trusted us ============ */
+
+.Brands h1{
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(58, 80, 114, 1);
+    padding-top: 100px;
+}
+
+.brands-logo {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+
+.brands-logo img{
+    display: flex;
+    width: 900px;
+    padding-top: 20px;
+    justify-content: center; /* Center horizontally */
+}
+
+.brand-images img{
+    display: flex;
+    width: 100vw;
+}
+
+/* delivery */
+.delivery h1{
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(58, 80, 114, 1);
+    padding-top: 100px;
+}
+
+.map img{
+    display: flex;
+    width: 100vw;
+}
+
+/* ====================================================== FOOTER =================================================================*/
+
+.footer-container{
+    background-color: #657C97;
+    padding-top: 20px;
+    margin-top: 20px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)*/
+    color: white;
+}
+
+.hours-contact{
+    display: flex;
+}
+
+.footer-container h1{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.contact-us{
+    list-style-type: none;
+    line-height: 1.8;
+    height: auto;
+    width: 50%;
+}
+
+.footer-container h2{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.hours{
+    list-style-type: none;
+    line-height: 1.8;
+    height:auto;
+    width: 50%;
+}
+
+hr{
+    width: 95%
+}
+
+.footer-container h3{
+    padding-left: 40px;
+    font-size: 20px;
+    letter-spacing: 1.5;
+}
+
+.footer-container h4{
+    font-size: 20px;
+    letter-spacing: 1.5;
+}
+
+.delivery-zones li{
+    margin-left: 40px;
+    padding-left: 10px;
+    line-height: 1.8;
+    height: auto;
+    width: 50%;
+}
+
+/*socials*/
+.socials-icons {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.socials-icons .icons {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
     margin: 0;
     padding: 0;
-    width: 100vw; /* Set width to 100vw */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure the image does not exceed its original size */
+}
+
+.socials-icons .icons li {
+    margin: 0;
+}
+
+.socials-icons .icons li img {
+    height: 40px; /* Adjust the size of the icons */
+    width: 40px; 
+}
+
+.footer-container h5{
+    text-align: center;
+    padding-bottom: 10px;
 }
