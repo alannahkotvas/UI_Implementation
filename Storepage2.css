@@ -339,12 +339,12 @@ hr{
 }
 
 /*socials*/
-
-
 .socials-icons {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 .socials-icons .icons {
@@ -360,6 +360,11 @@ hr{
 }
 
 .socials-icons .icons li img {
-    height: 30px; /* Adjust the size of the icons */
-    width: 30px; 
+    height: 40px; /* Adjust the size of the icons */
+    width: 40px; 
+}
+
+.footer-container h5{
+    text-align: center;
+    padding-bottom: 10px;
 }
