@@ -297,7 +297,105 @@
 .footer-container{
     background-color: #657C97;
     padding-top: 20px;
-    margin-top: 20px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)*/
+    padding-left: 30px;
+    margin-top: px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)*/
+    color: white;
+}
+
+.hours-contact{
+    display: flex;
+}
+
+.footer-container h1, .footer-container h2, .footer-container h3, .delivery-zones h4{
+    font-size: 30px;
+    font-family: "Neuton", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.footer-container h4{
+    padding-top: 60px;
+}
+
+.contact-us, .hours, .delivery-zones{
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    list-style-type: none;
+    line-height: 1.8;
+    height: auto;
+    width: 50%;
+    padding-bottom: 60px;
+}
+
+
+hr{
+    width: 97%
+}
+
+/*socials*/
+.socials-icons {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.socials-icons .icons {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.socials-icons .icons li {
+    margin: 0;
+}
+
+.socials-icons .icons li img {
+    height: 60px; /* Adjust the size of the icons */
+    width: 60px; 
+}
+
+.footer-container h5{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================================== FOOTER =================================================================*/
+/*
+.footer-container{
+    background-color: #657C97;
+    padding-top: 20px;
+    margin-top: 20px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)
     color: white;
 }
 
@@ -352,7 +450,7 @@ hr{
     width: 50%;
 }
 
-/*socials*/
+/*socials
 .socials-icons {
     display: flex;
     justify-content: space-between;
@@ -374,7 +472,7 @@ hr{
 }
 
 .socials-icons .icons li img {
-    height: 40px; /* Adjust the size of the icons */
+    height: 40px; /* Adjust the size of the icons 
     width: 40px; 
 }
 
@@ -382,3 +480,4 @@ hr{
     text-align: center;
     padding-bottom: 10px;
 }
+*/

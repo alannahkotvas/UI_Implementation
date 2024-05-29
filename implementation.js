@@ -8,8 +8,8 @@ document.getElementById('search-form').addEventListener('submit', function(event
         if (query.includes('birthday')) {
             window.location.href = 'products.html'; // Fix: URL should be a string
         } else {
-            // Navigate to a generic search results page with the query as a URL parameter
-            window.location.href = `search-results.html?q=${encodeURIComponent(query)}`;
+            // Redirect to "not found" page
+            window.location.href = 'notfoundpage.html';
         }
     }
 });
