@@ -78,14 +78,16 @@
 /*image / background - .container contains everything within the pink section*/
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom: 1px solid rgb(101, 124, 151);
     background: rgb(255, 255, 255);
+    margin-left: 8%;
+    margin-right: 8%;
     justify-content: center;
     align-items: center;
 }
 
-.product{
+.shop-item{
     width: 100%;
     max-width: 750px;
     display: flex;
@@ -104,9 +106,9 @@
     width: 400px;
 }
 
-/* .details contains all the stuff on the right hand side in the white box */
+/* .details contains all the stuff on the right hand side in the white box i need to restyle after fixing titles and classes for js :'( */
 
-.details{
+.shop-item{
     flex-basis: 50%;
     background: white;
     padding: 40px;
@@ -117,35 +119,48 @@
     justify-content: center;
 }
 
-.details h1{
+.shop-item-title{
     color: #3A5072; 
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 150;
+    display: flex;
+    flex-direction: column;
 }
 
-.details h2{
+.extra-info{
+    color: #3A5072; 
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 150;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-item-price{
     color:#3A5072;
     font-size: 30px;
     font-weight: 700;
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.details h3{
+.shop-item-message{
     padding-top: 10px;
-    font-weight: 1;
-    font-size: 18px;
-    padding-bottom: 60px;
-
+    font-weight: 0.5;
+    font-size: 23px;
+    padding-bottom: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
-.details h4{
-    font-weight: 100;
-    width: 600px;
-    border-bottom: 1px solid #657C97;
-    padding-bottom: 10px;
+.line{
+    margin-top: 12px;
+    border-top:1px solid #657C97;
 }
-
 
 /* custom message form */
 
@@ -155,26 +170,21 @@
 }
 
 .custom-message {
-    width: 500px;
     padding-top: 40px;
-    padding-bottom: 10px;
-}
-
-.custom-message {
-    width: 500px;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    color: #657C97; 
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 150;
+    display: flex;
+    flex-direction: column;
 }
 
 .custom-message input{
     color: #657C97;
-    width:100%;
-    height: 30px;
     border-radius: 4px;
     border: 1px solid #657C97;
     padding-left: 10px;
-    outline: none;
-    margin: 20px 0 12px 0;
+    font-size: 18px;
 }
 
 /* colour pick section */
@@ -186,14 +196,15 @@
 
 .colourselect p{
     color: #657C97;
+    margin-bottom: 20px;
 }
 
 .colourselect span{
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 60px;
     cursor: pointer;
 }
 
@@ -268,7 +279,7 @@
 
 /* add to cart button*/
 
-.add-to-cart{
+.shop-item-button{
     background: #3A5072;
     color: white;
     font-size: 17px;
@@ -367,117 +378,3 @@ hr{
     font-weight: 300;
     padding: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ====================================================== FOOTER =================================================================*/
-/*
-.footer-container{
-    background-color: #657C97;
-    padding-top: 20px;
-    margin-top: 20px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)
-    color: white;
-}
-
-.hours-contact{
-    display: flex;
-}
-
-.footer-container h1{
-    font-size: 20px;
-    letter-spacing: 1.5px;
-}
-
-.contact-us{
-    list-style-type: none;
-    line-height: 1.8;
-    height: auto;
-    width: 50%;
-}
-
-.footer-container h2{
-    font-size: 20px;
-    letter-spacing: 1.5px;
-}
-
-.hours{
-    list-style-type: none;
-    line-height: 1.8;
-    height:auto;
-    width: 50%;
-}
-
-hr{
-    width: 95%
-}
-
-.footer-container h3{
-    padding-left: 40px;
-    font-size: 20px;
-    letter-spacing: 1.5;
-}
-
-.footer-container h4{
-    font-size: 20px;
-    letter-spacing: 1.5;
-}
-
-.delivery-zones li{
-    margin-left: 40px;
-    padding-left: 10px;
-    line-height: 1.8;
-    height: auto;
-    width: 50%;
-}
-
-/*socials
-.socials-icons {
-    display: flex;
-    justify-content: space-between;
-    float: right;
-    padding-right: 30px;
-    padding-bottom: 30px;
-}
-
-.socials-icons .icons {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-}
-
-.socials-icons .icons li {
-    margin: 0;
-}
-
-.socials-icons .icons li img {
-    height: 40px; /* Adjust the size of the icons 
-    width: 40px; 
-}
-
-.footer-container h5{
-    text-align: center;
-    padding-bottom: 10px;
-}
-*/
