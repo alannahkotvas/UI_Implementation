@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=1368px">
     <title>The Balloon Crew</title>
     <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" async></script>
 </head>
 
 <!--=============== HEADER ====================-->
@@ -32,8 +33,6 @@
 <!--================================================================ CART PAGE =================================================================-->
 <!--makin some spans for js file :') -->
 <section class="cart-content-section">
-    <h2 class="cart-header">Your cart</h2>
-
 <!-- dont rlly need this section - just keeping it in case its important to the js file
     <div class="cart-row">
         <span class="cart-item cart-header cart-column">item</span>
@@ -53,7 +52,7 @@
                 <span class="cart-item-message">Happy Birthday</span>
                 <div class="cart-quantity cart-column">
                     <button class="btn btn-danger" type="button">remove from cart</button>
-                    <input class="cart-quantity-input" type="number" value="1">
+                    <input class="cart-quantity-input" type="number" min="1" value="1">
                 </div>
             </div>
         </div>
@@ -68,7 +67,7 @@
                 <span class="cart-item-message">Happy Birthday</span>
                     <div class="cart-quantity cart-column">
                          <button class="btn btn-danger" type="button">remove from cart</button>
-                         <input class="cart-quantity-input" type="number" value="1">
+                         <input class="cart-quantity-input" type="number" min="1" value="1">
                     </div>
             </div>
              </div>  
