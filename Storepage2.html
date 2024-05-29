@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=1368px">
     <title>The Balloon Crew</title>
     <link rel="stylesheet" href="Storepage2.css">
+    <script src="cart.js" async></script>
 </head>
 
 <!--=============== HEADER ====================-->
@@ -31,6 +32,7 @@
 
 <!--================================================================ STOREPAGE 2 =================================================================-->
 <body>
+    <form>
 <div class=" container">
     <div class="product">
         <div class="gallery">
@@ -39,19 +41,24 @@
         <div class="details">
             <h1>Personalised Bubble Balloons</h1>
             <h2>$75.00</h2>
-            <p1>Want to say something? Say it your way with our beautiful trendy custom balloon designs. Simply follow the steps to 
-                make your own personalised boutique gift.</p1>
+            <h3>Want to say something? Say it your way with our beautiful trendy custom balloon designs. Simply follow the steps to 
+                make your own personalised boutique gift.</h3> <br>
+            <h4>Float time affected by hot and humid conditions</h4> 
+<!--text form for message wanted-->
+                <div class="custom-message">
+                    <label for="custom-message">What custom message do you want your balloon to have?</label>
+                    <br>
+                    <input type="text" id="custom-message" placeholder="happy birthday!" maxlength="30" required>
+                </div>
 
-            <p2>Float time affected by hot and humid conditions</p2> 
 
-<!--colour selection section-->
+<!--colour selection section-->            
 
-            <form>
                 <div class="colourselect">
                     <p>Select the colour of your custom ballon:</p>
 
                     <label for="yellow">
-                        <input type="radio" name="colour" id="yellow">    
+                        <input type="radio" name="colour" id="yellow" required>    
                         <span class="colour-1"></span>
                     </label>
 
@@ -76,19 +83,74 @@
                     </label>
                 </div>
 
- <!--quantity of items section-->
-                
-                <div class="quantity-select">
-                    <input type="number" value="1">
-                </div>
-
- <!--add to cart-->
-                <button>Add to Cart</button>
-
-            </form>
+<!--text form for message wanted-->
+    <div class="special-requests">
+        <label for="special-requests">Do you have any special requests for this product?</label>
+        <br>
+        <input type="text" id="special-requests" placeholder="">
+    </div>
         </div>
     </div>
 </div>
 
+ <!--quantity of items section-->
+ <div class="cart-number">
+    <div class="quantity-select">
+        <input type="number" value="1">
+    </div>
+    
+    <!--add to cart-->
+    <button class="add-to-cart">Add to Cart</button>
+ </div>
+ <input type="submit">
+    </form>    
+</body>          
 
-</body>
+
+<!--================================================================ FOOTER =================================================================-->
+<footer>
+    <div class="footer-container">
+        <div class="hours-contact">
+            <ul class="contact-us">
+                <h1>Contact Us</h1>
+                <li>0295 698 101</li>
+                <li>173 Parramatta Rd, Annandale NSW (near cnr young st)</li>
+                <li>ABN 55 116 031 611</li>
+                <li>hi@balloons.net.au</li>
+            </ul>
+    
+            <ul class="hours">
+                <h2>Opening Hours</h2>
+                <li>Mondays: 11am to 2pm </li>
+                <li>Tuesdays-fridays: 10am to 3:00pm</li>
+                <li>Saturdays: 9:30am to 3:00pm</li>
+                <li>Sundays: Closed</li>
+                <li>Closed on public holidays</li>
+            </ul>
+        </div>
+
+        <h3>About Us</h3>
+        <hr>
+        <ul class="delivery-zones">
+            <h4>Delivery Zones</h4>
+            <li>Sydney CBD</li>
+            <li>Inner West</li>
+            <li>Sydney North Shore</li>
+            <li>Eastern Suburbs</li>
+            <li>Parramatta and West</li>
+        </ul>
+<!--socials icons-->
+
+        <div class="socials-icons">
+            <ul class="icons">
+                <li><a href=""><img src="icons/instagram-icon.png" alt="instagram"></a></li>
+                <li><a href=""><img src="icons/pinterest-icon.png" alt="pinterest"></a></li>
+                <li><a href=""><img src="icons/youtube-icon.png" alt="youtube"></a></li>
+                <li><a href=""><img src="icons/facebook-icon.png" alt="facebook"></a></li>
+            </ul>
+        </div>
+
+        <hr>
+        <h5>Copywright © 2022 The Balloon Crew</h5>
+    </div>
+</footer>
