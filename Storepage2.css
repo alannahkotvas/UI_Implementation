@@ -257,6 +257,7 @@
     margin-top: 30px;
     padding: 8px 8px 8px 45px;
     width: 50px;
+    height: 40px;
     border-radius: 4px;
     font-size: 20px;
 }
@@ -267,14 +268,23 @@
     background: #3A5072;
     color: white;
     font-size: 17px;
-    width: 70%;
     padding: 20px;
     border-radius: 4px;
     border: 0px;
     outline: 0px;
+    width: 30%;
+    height: 60px;
     margin-top: 30px;
     cursor: pointer;
+    margin-left: 20px;
     
+}
+
+/* styling for the buttons */
+.cart-number{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 22.5%;
 }
 
 
