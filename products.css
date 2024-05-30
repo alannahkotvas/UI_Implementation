@@ -1,5 +1,8 @@
 /* ================================================================= HEADER =================================================================*/
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .header {
     background-color: white;
     color: #fff;
@@ -56,10 +59,13 @@
 
 
 .navbar a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 15px 60px; /* Adjust padding for spacing */
+    padding: 10px 60px; /* Adjust padding for spacing */
     display: block;
 }
 
@@ -74,9 +80,7 @@
 /*work on this sizing girl*/
 
 .introImage img{
-    margin-top: -16px; /*a bit finnicky, reduces gap between navbar and image, try to find a way it can do it automatically */
-    width: 100%;
-    height: auto;
+   width: 100vw;
 }
 
 .title{
