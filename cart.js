@@ -73,6 +73,15 @@ function displayCart() {
                 <img src="./cartimages/${item.tag}.png">
                 <span>${item.name}</span>
                 </div>
+                <div class = "price">${item.price}</div>
+                <div class = "quantity">
+                    <ion - icon class="decrease"
+                    name="arrow-dropleft-circle"><ion-icon>
+                    <span>${item.inCart}</span>
+                    <ion-icon class="increase"
+                    name="arrow-dropright-circle"></ion-icon>
+                </div>
+
             `;
         });
     }
