@@ -106,6 +106,13 @@ function displayCart() {
     deleteButtons();
 }
 
+// code aint working from here on T^T in console it says "cannot read properties of undefined"
+// it says inCart is undefined. 
+
+
+
+//function for increase and decrease items
+
 function manageQuantity() {
     let decreaseButtons = document.querySelectorAll('.decrease');
     let increaseButtons = document.querySelectorAll('.increase');
@@ -147,7 +154,7 @@ function manageQuantity() {
     }
 }
 
-
+// function to remove items in cart
 function deleteButtons() {
     let deleteButtons = document.querySelectorAll('.product ion-icon');
     let productNumbers = localStorage.getItem('cartNumbers');
