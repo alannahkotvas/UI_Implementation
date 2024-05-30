@@ -60,10 +60,13 @@
 
 
 .navbar a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 15px 60px; /* Adjust padding for spacing */
+    padding: 10px 60px; /* Adjust padding for spacing */
     display: block;
 }
 
@@ -73,6 +76,7 @@
 .navbar li{
     float:left;
 }
+
 
 /* ====================================================== STOREPAGE 2 =================================================================*/
 /*image / background - .container contains everything within the pink section*/
