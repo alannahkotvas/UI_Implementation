@@ -3,7 +3,7 @@ let carts = document.querySelectorAll('.shop-item-button'); //targets the add to
 let products = [
     {
         name: 'Personalised Bubble Ballon',
-        tag: 'PersonalisedBalloon',
+        tag: 'bubbleballoons',
         price: 75,
         inCart: 0
     },
@@ -96,8 +96,8 @@ function displayCart(){
             productContainer.innerHTML += `
             <div class='product'>
                 <ion-icon name="close-outline"></ion-icon>
-                <img src="./Product Images/${item.tag}.png">
-                <span>${item.name}M/span>
+                <img src="./cartimages/${item.tag}.png">
+                <span>${item.name}</span>
             </div>
             `
             
