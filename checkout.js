@@ -1,8 +1,9 @@
-function myFunction() {
-    var x = document.getElementById("deliveryForm");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+function toggleDeliveryForm() {
+    let shipOption = document.getElementById("ship");
+    let deliveryForm = document.getElementById("deliveryForm");
+    if (shipOption.checked) {
+        deliveryForm.style.display = "block";
     } else {
-      x.style.display = "none";
+        deliveryForm.style.display = "none";
     }
-  }
+}
