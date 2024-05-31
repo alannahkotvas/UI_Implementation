@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
+
+
     <!--=============== HEADER ====================-->
     <nav class="header">
         <div class="logo-icons-container">
@@ -21,6 +23,8 @@
             </ul>
         </div>
     </nav>
+
+
 <!--================== NAVBAR =================-->
     <nav class="navbar">
         <ul>
@@ -31,5 +35,44 @@
             <li><a href="">Balloon Printing</a></li>
         </ul>
     </nav>
+
+
+<!-- ================= Checkout left page ============== -->
+<section class="customerdetails">
+    <form action="/action_page.php">
+
+        <!-- ================= contact =================== -->
+        <label for="contact">Contact</label><br>
+        <input type="text" id="contact" name="contact" placeholder="email"><br>
+
+        <!-- ================= delivery ================== -->
+        <label for="delivery">Delivery</label><br>
+            <div class="delivery-options">
+                <input type="radio" id="ship" name="delivery" value="ship">
+                <label for="ship">ship</label><br>
+                <input type="radio" id="pickup" name="delivery" value="pickup">
+                <label for="pickup">pick up</label><br>
+            </div>
+
+        <!-- ================= payment ==================== -->
+        <div class="payment-section-header">
+            <h1>payment</h1>
+            <p>All transactions are secured and encrypted.</p>
+        </div>
+        <div class="payment-section-label">
+            <label for="creditcard">Credit Card</label><br>
+        </div>
+        <div>
+            <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number"><br>
+            <input type="text" id="expirationdate" name="expirationdate" placeholder="Expiration Date"><br>
+            <input type="text" id="securitycode" name="securitycode" placeholder="Security Code"><br>
+            <input type="text" id="nameoncard" name="nameoncard" placeholder="Name on Card"><br>
+        </div>
+         
+        <!-- ================== pay now button ============= -->
+      <input type="submit" value="Pay now">
+    </form> 
+</section>
+
 </body>
 </html>
