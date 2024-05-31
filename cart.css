@@ -77,30 +77,14 @@
 }
 
 /* ====================================================== CART PAGE =================================================================*/
-/* - there is alot to keep track of so small key for me -
- dropdownmenu= all
-dropdown=ul
-dropdownlist=dropdown
-
-Cart content section = whole cart section
-Cart items = both balloon items grouped
-Cart row = individual item + text grouped (both have the same class so styling will b identical
-
-Cart-item cart-column = the segment within the cart row that contains the image
-
-Cart-price cart-column= the segment within the cart row that contains the text, cost and quantity
-
-*/
+/* 
 
 .cart-column{
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
-    margin-top: 40px;
+
     
 }
 
-.cart-row{ /*edit this to edit each entire item segment*/
+.cart-row{ /*edit this to edit each entire item segment
     border-bottom: 1px solid #657C97;
     margin-left: 10%;
     margin-right: 10%;
@@ -158,8 +142,7 @@ Cart-price cart-column= the segment within the cart row that contains the text, 
 }
 
 .btn-danger:hover{
-    transform: translateY(-5px); /* add cute animation later here - make button slightly smaller just cant remember off the top of my head*/
-} 
+    transform: translateY(-5px); /* add cute animation later here - make button slightly smaller just cant remember off the top of my head
 
 .cart-quantity-input{
     height: 35px;
@@ -217,6 +200,112 @@ Cart-price cart-column= the segment within the cart row that contains the text, 
 
 .btn-purchase:hover{
     transform: translateY(-5px);
+} */
+
+
+
+.productAll{
+    border-bottom: 1px solid #657C97;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    position: relative;
+
+}
+
+.product{ /*product name + removal button ;p */
+    display: flex;
+    flex-direction: column;
+    color: #657C97;
+}
+
+.item-name{
+    color: #657C97;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.remove-item{
+    color: #3A5072;
+    background-color: #fff;
+    border: 1px solid #3A5072;
+    position: absolute;
+    align-items: center;
+    bottom: 50px;
+    border-radius: 4px;
+    padding: 10px;
+    width: 300px;
+    align-items: center;
+}
+
+.remove-item:hover{
+    transform: translateY(-5px);
+}
+
+.product-image{
+    display: flex;
+    width:20%;
+    padding-right: 30px;
+}
+.product img{
+    width: 40%;
+    padding-left: 20%;
+}
+
+.quantity{
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    margin-left: auto;
+    height: 35px;
+    width:100px;
+    border: none;
+    background-color: white;
+    color: #3A5072;
+    font-size: 25px;
+    font-weight: 4;
+    top: 15%;
+}
+
+.price{
+    width: 20%;
+    font-size: 30px;
+    font-weight: BOLD;
+    color: #3A5072;
+}
+
+.total{
+    font-size: 30px;
+    font-weight: BOLD;
+    color: #3A5072;
+}
+
+.basketTotal{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10px;
+    color: #3A5072;
+    font-size: 25px;
+}
+
+.basketTotalContainer span{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10px;
+    color: #3A5072;
+}
+
+.btn-purchase{
+    display: block;
+    color: white;
+    background-color: #3A5072;
+    border-radius: 4px;
+    padding: 15px 60px 15px 60px;
+    margin: 40px auto 80px auto;
+    font-size: 25px;
 }
 
 /* ====================================================== FOOTER =================================================================*/

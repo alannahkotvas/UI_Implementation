@@ -68,7 +68,8 @@ function totalCost(product, action) {
     }
 }
 
-function displayCart() {
+
+/*function displayCart() {
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
     let productContainer = document.querySelector('.products');
     let cartCost = parseInt(localStorage.getItem('totalCost')) || 0;
@@ -105,6 +106,52 @@ function displayCart() {
     manageQuantity();
     deleteButtons();
 }
+//<div class="price">${item.price}</div> used to be on line 125
+*/
+function displayCart() {
+    let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
+    let productContainer = document.querySelector('.products');
+    let cartCost = parseInt(localStorage.getItem('totalCost')) || 0;
+
+    if (cartItems && productContainer) {
+        productContainer.innerHTML = '';
+
+        Object.values(cartItems).forEach(item => {
+            productContainer.innerHTML += `
+            <div class='productAll'>
+                <img class="product-image" src="./cartimages/${item.tag}.png">
+                    <div class='product'>
+                        <span class="item-name">${item.name}</span>
+                        <span name="close" class="remove-item" data-tag="${item.tag}"> Remove from cart</span>
+                        
+
+                        <div class="quantity">
+                            <ion-icon class="decrease" name="remove-circle-outline" data-tag="${item.tag}"></ion-icon>
+                            <span>${item.inCart}</span>
+                            <ion-icon class="increase" name="add-circle-outline" data-tag="${item.tag}"></ion-icon>
+                        </div>
+
+                        <div class="total">
+                        ${'total cost: $' + item.inCart * item.price}
+                        </div>
+
+                    </div>
+                
+            </div>
+            `;
+        });
+
+        productContainer.innerHTML += `
+            <div class="basketTotalContainer">
+                <h4 class="basketTotal">Estimated total: $${cartCost}</h4>
+                <span>shipping calculated at checkout</span>
+            </div>
+        `;
+    }
+    manageQuantity();
+    deleteButtons();
+}
+// shenaniganery over ;p
 
 function manageQuantity() {
     let decreaseButtons = document.querySelectorAll('.decrease');
