@@ -22,6 +22,7 @@ for (let i = 0; i < carts.length; i++) {
     });
 }
 
+// Function for updating the number next to cart icon
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers');
 
@@ -45,6 +46,7 @@ function cartNumbers(product, action) {
     setItems(product);
 }
 
+// Updating the cart
 function setItems(product) {
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
 
@@ -76,24 +78,24 @@ function displayCart() {
     if (cartItems && productContainer) {
         productContainer.innerHTML = '';
 
-        Object.values(cartItems).forEach(item => {
+        for (let item in cartItems) {
             productContainer.innerHTML += `
                 <div class='product'>
-                    <ion-icon name="close" class="remove-item" data-tag="${item.tag}"></ion-icon>
-                    <img src="./cartimages/${item.tag}.png">
-                    <span>${item.name}</span>
+                    <ion-icon name="close" class="remove-item" data-tag="${cartItems[item].tag}"></ion-icon>
+                    <img src="./cartimages/${cartItems[item].tag}.png">
+                    <span>${cartItems[item].name}</span>
                 </div>
-                <div class="price">${item.price}</div>
+                <div class="price">${cartItems[item].price}</div>
                 <div class="quantity">
-                    <ion-icon class="decrease" name="remove-circle-outline" data-tag="${item.tag}"></ion-icon>
-                    <span>${item.inCart}</span>
-                    <ion-icon class="increase" name="add-circle-outline" data-tag="${item.tag}"></ion-icon>
+                    <ion-icon class="decrease" name="remove-circle-outline" data-tag="${cartItems[item].tag}"></ion-icon>
+                    <span>${cartItems[item].inCart}</span>
+                    <ion-icon class="increase" name="add-circle-outline" data-tag="${cartItems[item].tag}"></ion-icon>
                 </div>
                 <div class="total">
-                    ${item.inCart * item.price}
+                    ${cartItems[item].inCart * cartItems[item].price}
                 </div>
             `;
-        });
+        }
 
         productContainer.innerHTML += `
             <div class="basketTotalContainer">
@@ -111,9 +113,9 @@ function manageQuantity() {
     let increaseButtons = document.querySelectorAll('.increase');
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
 
-    decreaseButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            let productTag = button.getAttribute('data-tag');
+    for (let i = 0; i < decreaseButtons.length; i++) {
+        decreaseButtons[i].addEventListener('click', function() {
+            let productTag = this.getAttribute('data-tag');
             if (cartItems[productTag].inCart > 1) {
                 cartItems[productTag].inCart -= 1;
                 cartNumbers(cartItems[productTag], "decrease");
@@ -122,27 +124,27 @@ function manageQuantity() {
                 displayCart();
             }
         });
-    });
+    }
 
-    increaseButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            let productTag = button.getAttribute('data-tag');
+    for (let i = 0; i < increaseButtons.length; i++) {
+        increaseButtons[i].addEventListener('click', function() {
+            let productTag = this.getAttribute('data-tag');
             cartItems[productTag].inCart += 1;
             cartNumbers(cartItems[productTag]);
             totalCost(cartItems[productTag]);
             localStorage.setItem('productsInCart', JSON.stringify(cartItems));
             displayCart();
         });
-    });
+    }
 }
 
 function deleteButtons() {
     let deleteButtons = document.querySelectorAll('.remove-item');
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
 
-    deleteButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            let productTag = button.getAttribute('data-tag');
+    for (let i = 0; i < deleteButtons.length; i++) {
+        deleteButtons[i].addEventListener('click', function() {
+            let productTag = this.getAttribute('data-tag');
             let productNumbers = localStorage.getItem('cartNumbers');
             let cartCost = localStorage.getItem('totalCost');
 
@@ -155,7 +157,7 @@ function deleteButtons() {
             displayCart();
             onLoadCartNumbers();
         });
-    });
+    }
 }
 
 onLoadCartNumbers();
