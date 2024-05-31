@@ -74,3 +74,77 @@
 .navbar li{
     float:left;
 }
+
+
+
+/* ================== checkout ================= */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.customerdetails {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.customerdetails form {
+    display: flex;
+    flex-direction: column;
+}
+
+.customerdetails label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.customerdetails input[type="text"],
+.customerdetails input[type="radio"],
+.customerdetails input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.customerdetails input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.delivery-options {
+    display: flex;
+    align-items: center;
+}
+
+.delivery-options label {
+    margin-right: 10px;
+}
+
+.credit-card-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.customerdetails input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.customerdetails input[type="submit"]:hover {
+    background-color: #45a049;
+}
