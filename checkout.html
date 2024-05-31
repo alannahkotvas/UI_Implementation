@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="checkout.css">
+    <script src="checkout.js"></script>
 </head>
 <body>
 
@@ -46,13 +47,25 @@
         <input type="text" id="contact" name="contact" placeholder="email"><br>
 
         <!-- ================= delivery ================== -->
-        <label for="delivery">Delivery</label><br>
-            <div class="delivery-options">
-                <input type="radio" id="ship" name="delivery" value="ship">
-                <label for="ship">ship</label><br>
-                <input type="radio" id="pickup" name="delivery" value="pickup">
-                <label for="pickup">pick up</label><br>
-            </div>
+       <!-- Delivery -->
+       <label for="delivery">Delivery</label><br>
+       <div class="delivery-options">
+           <input type="radio" id="ship" name="delivery" value="ship" onclick="toggleDeliveryForm()">
+           <label for="ship">ship</label><br>
+           <input type="radio" id="pickup" name="delivery" value="pickup" onclick="toggleDeliveryForm()">
+           <label for="pickup">pick up</label><br>
+       </div>
+
+       <!-- Delivery Form -->
+       <div id="deliveryForm" class="hidden">
+           <label for="billingAddress">Billing Address</label><br>
+           <input type="text" id="country" name="country" placeholder="country"><br>
+           <input type="text" id="firstName" name="firstName" placeholder="first name"><br>
+           <input type="text" id="lastName" name="lastName" placeholder="last name"><br>
+           <input type="text" id="address" name="address" placeholder="address"><br>
+           <input type="text" id="apartment" name="apartment" placeholder="apartment, suite, etc. (optional)"><br>
+           <input type="text" id="postCode" name="postCode" placeholder="post code"><br>
+       </div>
 
         <!-- ================= payment ==================== -->
         <div class="payment-section-header">
