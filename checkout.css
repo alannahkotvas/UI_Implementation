@@ -96,6 +96,10 @@ border: 3px solid rgba(101, 124, 151, 1);
     font-size: 25px;
 }
 
+.contact{
+    padding-bottom: 25px;
+}
+
 /* text inside the boxes aka placeholders*/
 .customerdetails input::placeholder{
     font-family: "Mukta Vaani", sans-serif;
@@ -126,13 +130,15 @@ border: 3px solid rgba(101, 124, 151, 1);
     font-style: normal;
     color: rgb(131, 158, 189) ;
     font-size: 18px;
+    padding-left: 10px;
  }
 
 .delivery-options {
     display: flex;
     flex-direction: column;/* Use column direction to stack options vertically */
-    padding-bottom: 50px; /*distance between billing address and pick up box 
+    padding-bottom: 25px; /*distance between billing address and pick up box */
 }
+
 .delivery-option {
     border: 1px solid rgba(101, 124, 151, 1);
     padding: 10px;
@@ -142,6 +148,11 @@ border: 3px solid rgba(101, 124, 151, 1);
     align-items: center;
 }
 
+/* billing address */
+.payment-section-header{
+    padding-top: 25px;
+
+}
 .payment-section-header h1, .payment-section-header p{
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
@@ -153,8 +164,6 @@ border: 3px solid rgba(101, 124, 151, 1);
 .payment-section-header p{
     font-size: 15px;
 }
-
-
 
 /* pay now button */
 .paynow {
