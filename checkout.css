@@ -84,7 +84,8 @@ display: flex;
 width: 50%;
 padding-left: 100px;
 padding-top: 20px;
-border: 3px solid rgba(101, 124, 151, 1);
+padding-bottom: 10%;
+background-color: white;
 }
 
 /* labels */
@@ -105,16 +106,20 @@ border: 3px solid rgba(101, 124, 151, 1);
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: rgb(131, 158, 189) ;
+    color: #878787 ;
     font-size: 18px;
-    padding-left: 10px;
+    padding: 20px;
 }
 
 /* areas inside the box */
 .customerdetails input{
-    width: 900px;
+    width: 100%;
     height: 40px;
     display: flex;
+    background-color: #EAEAEA;
+    border: none;
+    border-radius: 4px;
+
 }
 
 /* the size of radio buttons*/
@@ -149,6 +154,7 @@ border: 3px solid rgba(101, 124, 151, 1);
 }
 
 /* billing address */
+
 .payment-section-header{
     padding-top: 25px;
 
@@ -165,10 +171,34 @@ border: 3px solid rgba(101, 124, 151, 1);
     font-size: 15px;
 }
 
+.card-info-container{
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    border: 1px solid #657C97;
+    padding: 5%;
+    border-radius: 4px;
+    background-color: none;
+    color: #657C97;
+}
+
+.card-info-container p{
+    margin-bottom: 2.5%;
+    padding-bottom: 2.5%;
+    font-size: 20px;
+    border-bottom: 1px solid #657C97 ;
+}
+
+.card-info-container input{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
 /* pay now button */
 .paynow {
-    padding-top: 30px;
+    padding-top: 35px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding-bottom: 50px;
 }

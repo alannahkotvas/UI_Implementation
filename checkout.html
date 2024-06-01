@@ -57,54 +57,60 @@ Neuton font
 
 <section class="customerdetails">
     <form action="/action_page.php">
-
-        <!-- ================= contact =================== -->
+        <div class="delivery-info-container">
+             <!-- ================= contact =================== -->
         <div class="contact">
-        <label for="contact">Contact</label><br>
-        <input type="text" id="contact" name="contact" placeholder="email"><br>
+            <label for="contact">Contact</label><br>
+            <input type="text" id="contact" name="contact" placeholder="email"><br>
+            </div>
+    
+            <!-- ================= delivery ================== -->
+           <!-- Delivery -->
+           <label for="delivery">Delivery</label><br>
+           <div class="delivery-options">
+            <div class="delivery-option">
+               <input type="radio" id="ship" name="delivery" value="ship" onclick="toggleDeliveryForm()">
+               <label for="ship">ship</label><br>
+            </div>
+            <div class=" delivery-option">
+               <input type="radio" id="pickup" name="delivery" value="pickup" onclick="toggleDeliveryForm()">
+               <label for="pickup">pick up</label><br>
+            </div>
+           </div>
+    
+           <!-- Delivery Form -->
+           <div id="deliveryForm" class="hidden">
+               <label for="billingAddress">Billing Address</label><br>
+               <input type="text" id="country" name="country" placeholder="country"><br>
+               <input type="text" id="firstName" name="firstName" placeholder="first name"><br>
+               <input type="text" id="lastName" name="lastName" placeholder="last name"><br>
+               <input type="text" id="address" name="address" placeholder="address"><br>
+               <input type="text" id="apartment" name="apartment" placeholder="apartment, suite, etc. (optional)"><br>
+               <input type="text" id="postCode" name="postCode" placeholder="post code"><br>
+           </div>
         </div>
 
-        <!-- ================= delivery ================== -->
-       <!-- Delivery -->
-       <label for="delivery">Delivery</label><br>
-       <div class="delivery-options">
-        <div class="delivery-option">
-           <input type="radio" id="ship" name="delivery" value="ship" onclick="toggleDeliveryForm()">
-           <label for="ship">ship</label><br>
-        </div>
-        <div class=" delivery-option">
-           <input type="radio" id="pickup" name="delivery" value="pickup" onclick="toggleDeliveryForm()">
-           <label for="pickup">pick up</label><br>
-        </div>
-       </div>
-
-       <!-- Delivery Form -->
-       <div id="deliveryForm" class="hidden">
-           <label for="billingAddress">Billing Address</label><br>
-           <input type="text" id="country" name="country" placeholder="country"><br>
-           <input type="text" id="firstName" name="firstName" placeholder="first name"><br>
-           <input type="text" id="lastName" name="lastName" placeholder="last name"><br>
-           <input type="text" id="address" name="address" placeholder="address"><br>
-           <input type="text" id="apartment" name="apartment" placeholder="apartment, suite, etc. (optional)"><br>
-           <input type="text" id="postCode" name="postCode" placeholder="post code"><br>
-       </div>
 
         <!-- ================= payment ==================== -->
         <div class="payment-section-header">
             <h1>Payment</h1>
             <p>All transactions are secured and encrypted.</p>
         </div>
-        <div>
-            <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number"><br>
-            <input type="text" id="expirationdate" name="expirationdate" placeholder="Expiration Date"><br>
-            <input type="text" id="securitycode" name="securitycode" placeholder="Security Code"><br>
-            <input type="text" id="nameoncard" name="nameoncard" placeholder="Name on Card"><br>
+        <div class="card-info-container">
+                <p>Credit Card</p>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number"><br>
+                <input type="text" id="expirationdate" name="expirationdate" placeholder="Expiration Date"><br>
+                <input type="text" id="securitycode" name="securitycode" placeholder="Security Code"><br>
+                <input type="text" id="nameoncard" name="nameoncard" placeholder="Name on Card"><br>
         </div>
-         
-        <!-- ================== pay now button ============= -->
-    <div class="paynow">
-      <input type="submit" value="Pay now">
-    </div>
+             
+            <!-- ================== pay now button ============= -->
+        <div class="paynow">
+          <input type="submit" value="Pay now">
+        </div>
+
+        </div>
+
     </form> 
 </section>
 
