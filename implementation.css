@@ -41,6 +41,17 @@
     height: 30px; /* Adjust the size of the icons */
     width: 30px; 
 }
+
+/* number if item in cart */
+.cart a, .cart a span{
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
 /* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
