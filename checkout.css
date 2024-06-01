@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    background-color: #4CAF50;
 }
 .header {
     background-color: white;
@@ -78,6 +79,9 @@
 
 
 /* ================== checkout ================= */
+.customerdetails{
+    background: white;
+}
 body {
     font-family: Arial, sans-serif;
 }
