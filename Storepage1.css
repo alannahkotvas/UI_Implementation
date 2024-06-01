@@ -105,9 +105,10 @@
 }
 
 .gallery img{
+    padding-right: 20%;
     display: block;
     height: auto;
-    width: 400px;
+    width: 300px;
 }
 
 /* .details contains all the stuff on the right hand side in the white box i need to restyle after fixing titles and classes for js :'( */
