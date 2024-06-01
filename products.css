@@ -113,6 +113,11 @@
     padding-right: 10%;
  }
 
+ .item-count{
+    display: inline-block;
+    padding-top: 10px;
+ }
+
 .dropdown-menu button{
     color: #657C97;
     width: 250px;
@@ -170,8 +175,8 @@
     text-align: left;
     cursor: pointer;
     padding-top: 3rem;
+  
  }
-
 
 .box{
     padding: 0px, 20px 10px 20px;
@@ -180,7 +185,8 @@
     border-radius: 10px;
     position: relative;
     transition: all 0.35s ease;
-
+    font-family: "Mukta Vaani, sans-serif";
+    color: #3A5072;
 }
 
 
@@ -195,6 +201,7 @@
     font-size: auto;
     letter-spacing: 1px;
     margin-bottom: 8px;
+ 
     
  }
 
