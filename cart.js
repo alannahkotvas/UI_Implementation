@@ -1,28 +1,34 @@
+//selecting the button element
 let carts = document.querySelectorAll('.shop-item-button');
 
-let products = [
-    {
+// Define the products object
+let products = {
+    'bubbleballoons': {
         name: 'Personalised Bubble Balloon',
         tag: 'bubbleballoons',
         price: 75,
         inCart: 0
     },
-    {
+    'birthdayballoons': {
         name: 'Birthday Balloons',
         tag: 'birthdayballoons',
         price: 99,
         inCart: 0
     }
-];
+};
 
+// Add event listeners to each cart button using a for loop
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cartNumbers(products[i]);
-        totalCost(products[i]);
+        // Get the product tag from the data attribute
+        let productTag = carts[i].getAttribute('data-product');
+        // Update cart numbers and total cost
+        cartNumbers(products[productTag]);
+        totalCost(products[productTag]);
     });
 }
 
-// Function for updating the number next to cart icon
+// Function for updating the number next to the cart icon
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers');
 
@@ -31,6 +37,7 @@ function onLoadCartNumbers() {
     }
 }
 
+// Function to update the number of items in the cart
 function cartNumbers(product, action) {
     let productNumbers = localStorage.getItem('cartNumbers');
     productNumbers = parseInt(productNumbers) || 0;
@@ -46,7 +53,7 @@ function cartNumbers(product, action) {
     setItems(product);
 }
 
-// Updating the cart
+// Function to set the items in the cart and update local storage
 function setItems(product) {
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
 
@@ -60,6 +67,7 @@ function setItems(product) {
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
+// Function to update the total cost of the cart
 function totalCost(product, action) {
     let cartCost = parseInt(localStorage.getItem('totalCost')) || 0;
 
@@ -69,47 +77,7 @@ function totalCost(product, action) {
         localStorage.setItem('totalCost', cartCost + product.price);
     }
 }
-
-
-/*function displayCart() {
-    let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
-    let productContainer = document.querySelector('.products');
-    let cartCost = parseInt(localStorage.getItem('totalCost')) || 0;
-
-    if (cartItems && productContainer) {
-        productContainer.innerHTML = '';
-
-        for (let item in cartItems) {
-            productContainer.innerHTML += `
-                <div class='product'>
-                    <ion-icon name="close" class="remove-item" data-tag="${cartItems[item].tag}"></ion-icon>
-                    <img src="./cartimages/${cartItems[item].tag}.png">
-                    <span>${cartItems[item].name}</span>
-                </div>
-                <div class="price">${cartItems[item].price}</div>
-                <div class="quantity">
-                    <ion-icon class="decrease" name="remove-circle-outline" data-tag="${cartItems[item].tag}"></ion-icon>
-                    <span>${cartItems[item].inCart}</span>
-                    <ion-icon class="increase" name="add-circle-outline" data-tag="${cartItems[item].tag}"></ion-icon>
-                </div>
-                <div class="total">
-                    ${cartItems[item].inCart * cartItems[item].price}
-                </div>
-            `;
-        }
-
-        productContainer.innerHTML += `
-            <div class="basketTotalContainer">
-                <h4 class="basketTotalTitle">Basket Total</h4>
-                <h4 class="basketTotal">$${cartCost}</h4>
-            </div>
-        `;
-    }
-    manageQuantity();
-    deleteButtons();
-}
-//<div class="price">${item.price}</div> used to be on line 125
-*/
+// Function to display the cart items
 function displayCart() {
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
     let productContainer = document.querySelector('.products');
@@ -118,30 +86,33 @@ function displayCart() {
     if (cartItems && productContainer) {
         productContainer.innerHTML = '';
 
-        Object.values(cartItems).forEach(item => {
-            productContainer.innerHTML += `
-            <div class='productAll'>
-                <img class="product-image" src="./cartimages/${item.tag}.png">
-                    <div class='product'>
-                        <span class="item-name">${item.name}</span>
-                        <span name="close" class="remove-item" data-tag="${item.tag}"> Remove from cart</span>
-                        
+        // Using a for loop instead of Object.values
+        for (let key in cartItems) {
+            if (cartItems.hasOwnProperty(key)) {
+                let item = cartItems[key];
+                productContainer.innerHTML += `
+                <div class='productAll'>
+                    <img class="product-image" src="./cartimages/${item.tag}.png">
+                        <div class='product'>
+                            <span class="item-name">${item.name}</span>
+                            <span name="close" class="remove-item" data-tag="${item.tag}"> Remove from cart</span>
 
-                        <div class="quantity">
-                            <ion-icon class="decrease" name="remove-circle-outline" data-tag="${item.tag}"></ion-icon>
-                            <span>${item.inCart}</span>
-                            <ion-icon class="increase" name="add-circle-outline" data-tag="${item.tag}"></ion-icon>
+                            <div class="quantity">
+                                <ion-icon class="decrease" name="remove-circle-outline" data-tag="${item.tag}"></ion-icon>
+                                <span>${item.inCart}</span>
+                                <ion-icon class="increase" name="add-circle-outline" data-tag="${item.tag}"></ion-icon>
+                            </div>
+
+                            <div class="total">
+                            ${'total cost: $' + item.inCart * item.price}
+                            </div>
+
                         </div>
-
-                        <div class="total">
-                        ${'total cost: $' + item.inCart * item.price}
-                        </div>
-
-                    </div>
-                
-            </div>
-            `;
-        });
+                    
+                </div>
+                `;
+            }
+        }
 
         productContainer.innerHTML += `
             <div class="basketTotalContainer">
@@ -153,13 +124,14 @@ function displayCart() {
     manageQuantity();
     deleteButtons();
 }
-// shenaniganery over ;p
 
+// Function to manage quantity adjustments
 function manageQuantity() {
     let decreaseButtons = document.querySelectorAll('.decrease');
     let increaseButtons = document.querySelectorAll('.increase');
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
 
+    // for loop for decrease button
     for (let i = 0; i < decreaseButtons.length; i++) {
         decreaseButtons[i].addEventListener('click', function() {
             let productTag = this.getAttribute('data-tag');
@@ -173,6 +145,7 @@ function manageQuantity() {
         });
     }
 
+    // for loop for increase button
     for (let i = 0; i < increaseButtons.length; i++) {
         increaseButtons[i].addEventListener('click', function() {
             let productTag = this.getAttribute('data-tag');
@@ -185,10 +158,12 @@ function manageQuantity() {
     }
 }
 
+// Function to handle item removal from the cart
 function deleteButtons() {
     let deleteButtons = document.querySelectorAll('.remove-item');
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
 
+    // for loop for delete button
     for (let i = 0; i < deleteButtons.length; i++) {
         deleteButtons[i].addEventListener('click', function() {
             let productTag = this.getAttribute('data-tag');
@@ -207,5 +182,7 @@ function deleteButtons() {
     }
 }
 
+// Load the cart numbers when the page loads
 onLoadCartNumbers();
+// Display the cart items when the page loads
 displayCart();
