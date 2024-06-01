@@ -78,12 +78,50 @@
 
 
 /* ================== checkout ================= */
-body {
+.customerdetails{
+display: flex;
+width: 50%;
+padding-left: 100px;
+padding-top: 20px;
+border: 3px solid rgba(58, 80, 114, 1);
+}
+
+.customerdetails label{
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
     font-style: normal;
+    color: rgba(58, 80, 114, 1);
+    font-size: 25px;
 }
 
+.customerdetails input::placeholder{
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(131, 158, 189) ;
+    font-size: 18px;
+}
+
+.customerdetails input{
+    width: 500px;
+    height: 30px;
+}
+
+.delivery-options {
+    display: flex;
+    flex-direction: column; /* Use column direction to stack options vertically */
+}
+.delivery-option {
+    border: 1px solid rgba(58, 80, 114, 1);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*
 .customerdetails {
     max-width: 400px;
     margin: auto;
@@ -98,10 +136,6 @@ body {
     flex-direction: column;
 }
 
-.customerdetails label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
 
 .customerdetails input[type="text"],
 .customerdetails input[type="radio"],

@@ -36,9 +36,25 @@
             <li><a href="">Balloon Printing</a></li>
         </ul>
     </nav>
+<!--
+mukta vaani body font 
 
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+     background-color: rgb(131, 158, 189) ;
+
+
+Neuton font 
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+     color: rgba(58, 80, 114, 1);
+
+-->
 
 <!-- ================= Checkout left page ============== -->
+
 <section class="customerdetails">
     <form action="/action_page.php">
 
@@ -50,10 +66,14 @@
        <!-- Delivery -->
        <label for="delivery">Delivery</label><br>
        <div class="delivery-options">
+        <div class="delivery-option">
            <input type="radio" id="ship" name="delivery" value="ship" onclick="toggleDeliveryForm()">
            <label for="ship">ship</label><br>
+        </div>
+        <div class=" delivery-option">
            <input type="radio" id="pickup" name="delivery" value="pickup" onclick="toggleDeliveryForm()">
            <label for="pickup">pick up</label><br>
+        </div>
        </div>
 
        <!-- Delivery Form -->
