@@ -104,9 +104,19 @@ border: 3px solid rgba(58, 80, 114, 1);
 
 .customerdetails input{
     width: 500px;
-    height: 30px;
+    height: 40px;
 }
-
+ .delivery-option input{
+    width: 20px;
+    height: 20px;
+ }
+ .delivery-option label{
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(131, 158, 189) ;
+    font-size: 18px;
+ }
 .delivery-options {
     display: flex;
     flex-direction: column; /* Use column direction to stack options vertically */
