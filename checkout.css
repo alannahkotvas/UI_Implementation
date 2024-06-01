@@ -78,14 +78,16 @@
 
 
 /* ================== checkout ================= */
+/* the main container */
 .customerdetails{
 display: flex;
 width: 50%;
 padding-left: 100px;
 padding-top: 20px;
-border: 3px solid rgba(58, 80, 114, 1);
+border: 3px solid rgba(101, 124, 151, 1);
 }
 
+/* labels */
 .customerdetails label{
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
@@ -94,22 +96,30 @@ border: 3px solid rgba(58, 80, 114, 1);
     font-size: 25px;
 }
 
+/* text inside the boxes aka placeholders*/
 .customerdetails input::placeholder{
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: rgb(131, 158, 189) ;
     font-size: 18px;
+    padding-left: 10px;
 }
 
+/* areas inside the box */
 .customerdetails input{
-    width: 500px;
+    width: 900px;
     height: 40px;
+    display: flex;
 }
+
+/* the size of radio buttons*/
  .delivery-option input{
     width: 20px;
     height: 20px;
  }
+
+ /* pick up and ship text */
  .delivery-option label{
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
@@ -117,12 +127,14 @@ border: 3px solid rgba(58, 80, 114, 1);
     color: rgb(131, 158, 189) ;
     font-size: 18px;
  }
+
 .delivery-options {
     display: flex;
-    flex-direction: column; /* Use column direction to stack options vertically */
+    flex-direction: column;/* Use column direction to stack options vertically */
+    padding-bottom: 50px; /*distance between billing address and pick up box 
 }
 .delivery-option {
-    border: 1px solid rgba(58, 80, 114, 1);
+    border: 1px solid rgba(101, 124, 151, 1);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -130,6 +142,39 @@ border: 3px solid rgba(58, 80, 114, 1);
     align-items: center;
 }
 
+.payment-section-header h1, .payment-section-header p{
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgba(58, 80, 114, 1);
+    font-size: 25px;
+}
+
+.payment-section-header p{
+    font-size: 15px;
+}
+
+
+
+/* pay now button */
+.paynow {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.paynow input[type="submit"] {
+    background-color: rgba(58, 80, 114, 1); /* Change background color to red */
+    color: white;
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
 
 /*
 .customerdetails {
@@ -193,4 +238,80 @@ border: 3px solid rgba(58, 80, 114, 1);
 
 .customerdetails input[type="submit"]:hover {
     background-color: #45a049;
+} */
+
+/* ====================================================== FOOTER =================================================================*/
+
+.footer-container{
+    background-color: #657C97;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-top: px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)*/
+    color: white;
+}
+
+.hours-contact{
+    display: flex;
+}
+
+.footer-container h1, .footer-container h2, .footer-container h3, .delivery-zones h4{
+    font-size: 30px;
+    font-family: "Neuton", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.footer-container h4{
+    padding-top: 60px;
+}
+
+.contact-us, .hours, .delivery-zones{
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    list-style-type: none;
+    line-height: 1.8;
+    height: auto;
+    width: 50%;
+    padding-bottom: 60px;
+}
+
+
+hr{
+    width: 97%
+}
+
+/*socials*/
+.socials-icons {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.socials-icons .icons {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.socials-icons .icons li {
+    margin: 0;
+}
+
+.socials-icons .icons li img {
+    height: 60px; /* Adjust the size of the icons */
+    width: 60px; 
+}
+
+.footer-container h5{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    padding: 30px;
 }
