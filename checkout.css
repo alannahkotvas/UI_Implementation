@@ -77,7 +77,7 @@
 
 
 
-/* ================== checkout ================= */
+/* ==================================================== checkout ================================================ */
 /* the main container */
 .customerdetails{
 display: flex;
@@ -181,8 +181,15 @@ border: 3px solid rgba(101, 124, 151, 1);
     font-style: normal;
     font-size: 25px;
     width: 600px;
+    height: 60px;
     display: flex;
     justify-content: center;
+    border-radius: 4px;
+    border: none;
+}
+
+.paynow input:hover{
+    background-color: #657C97;
 }
 
 /*
