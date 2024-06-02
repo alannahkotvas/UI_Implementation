@@ -4,177 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Balloon Crew</title>
+    <!-- CSS file -->
     <link rel="stylesheet" href="products.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- JavaScript file -->
+    <script src="cart.js"></script>
 </head>
+<body>
+    <!--=============== HEADER ====================-->
+    <nav class="header">
+        <!-- logo -->
+        <div class="logo-icons-container">
+            <a href="implementation.html">
+                <img src="icons/ballooncrew logo.png" alt="Logo" class="logo">
+            </a>
+            <!-- icons -->
+            <ul class="icons">
+                <li><a href="#"><img src="icons/profile icon.png" alt="Profile"></a></li>
+                <li><a href="#"><img src="icons/heart icon.png" alt="Heart"></a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <img src="icons/cart icon.png" alt="cart"><span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<!--=============== HEADER ====================-->
-<nav class="header">
-    <div class="logo-icons-container">
-        <a href="implementation.html"><img src="icons/ballooncrew logo.png" alt="Logo" class="logo"></a>
-        <ul class="icons">
-            <li><a href=""><img src="icons/profile icon.png" alt="Profile"></a></li>
-            <li><a href=""><img src="icons/heart icon.png" alt="Heart"></a></li>
-            <li class="cart">
-                <a href="cart.html"><img src="icons/cart icon.png" alt="cart"><span>0</span>
-                </a>
+    <!--================== NAVBAR ======================-->
+    <nav class="navbar">
+        <!-- toggle button/hamburger icon -->
+        <div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- list of navigation links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Product Information</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Balloon Printing</a></li>
         </ul>
+    </nav>
+
+    <!--=============== INTRODUCTION ==================-->
+    <div class="introImage">
+        <img src="Product Images/squishedBalloon.png" alt="Intro Image">
     </div>
-</nav>
-<!--================== navbar ======================-->
-<nav class="navbar">
-    <div class="toggle-button" id="toggleButton">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <div class="title">
+        <h1>Birthday</h1>
+        <p>Make your celebration extra special with our birthday collection</p>
     </div>
-    <ul class="nav-links" id="navLinks">
-        <li><a href="products.html">Products</a></li>
-        <li><a href="">Events</a></li>
-        <li><a href="">Product Information</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Balloon Printing</a></li>
-    </ul>
-</nav>
 
-<!--================================================================ PRODUCT PAGE =================================================================-->
-
-<!--=================== INTRODUCTION ==================-->
-<div class="introImage">
-    <img src="Product Images/squishedBalloon.png">
-</div>
-
-<div class="title">
-    <h1>Birthday</h1>
-    <p1>Make your celebration extra special with our birthday collection</p1>
-</div>
-
-<!--=============== DROPDOWN MENU =================-->
-<div class="dropdown-all">
-    <span class="item-count">Birthday Ballons (6)</span>
-    <div class="dropdown-menu">
-        <button>Sort By v</button>
-        <div class="content">
-            <a href="">popularity</a>
-            <a href="">Price: high to low</a>
-            <a href="">Price: low to high</a>
+    <!--=============== DROPDOWN MENU =================-->
+    <div class="dropdown-all">
+        <span class="item-count">Birthday Balloons (6)</span>
+        <div class="dropdown-menu">
+            <button>Sort By v</button>
+            <div class="content">
+                <a href="#">Popularity</a>
+                <a href="#">Price: high to low</a>
+                <a href="#">Price: low to high</a>
+            </div>
         </div>
     </div>
-</div>
 
-<!--=================== PRODUCTS ==================-->
-
-<body>
+    <!--=============== PRODUCTS ==================-->
     <section class="shop" id="shop">
         <div class="container">
-    
             <div class="box">
-                <a href="Storepage1.html"><img src="Product Images/RoseBalloon.png"></a> <!-- store page no.1-->
+                <a href="Storepage1.html"><img src="Product Images/RoseBalloon.png" alt="Rose Gold Birthday"></a>
                 <h2>Rose Gold Birthday</h2>
-                <h3> </h3>
                 <h4>$93.00</h4>
- 
             </div>
-    
+
             <div class="box">
-                <a href="Storepage2.html"><img src="Product Images/PersonalisedBalloon.png"></a>   <!-- store page no.2-->
+                <a href="Storepage2.html"><img src="Product Images/PersonalisedBalloon.png" alt="Personalised Bubble"></a>
                 <h2>Personalised Bubble</h2>
-                <h3>balloons</h3>
+                <h3>Balloons</h3>
                 <h4>$78.00</h4>
- 
             </div>
 
             <div class="box">
-                <img src="Product Images/OneBalloon.png"> 
+                <img src="Product Images/OneBalloon.png" alt="Giant One Digit Confetti">
                 <h2>Giant One Digit Confetti</h2>
-                <h3>bouquet deluxe</h3>
+                <h3>Bouquet Deluxe</h3>
                 <h4>$99.00</h4>
-
             </div>
-    
+
             <div class="box">
-                <img src="Product Images/BirthdayBalloon.png">
+                <img src="Product Images/BirthdayBalloon.png" alt="Birthday Bubble Plus 6">
                 <h2>Birthday Bubble Plus 6</h2>
-                <h3>with jellybeans</h3>
+                <h3>With Jellybeans</h3>
                 <h4>$60.00</h4>
-
             </div>
-    
+
             <div class="box">
-                <img src="Product Images/BrightBalloon.png">
+                <img src="Product Images/BrightBalloon.png" alt="Bright Age Deluxe">
                 <h2>Bright Age Deluxe</h2>
-                <h3></h3>
                 <h4>$65.00</h4>
-
             </div>
-    
+
             <div class="box">
-                <img src="Product Images/UltimateBalloon.png">
+                <img src="Product Images/UltimateBalloon.png" alt="Ultimate Birthday Blues">
                 <h2>Ultimate Birthday Blues</h2>
-                <h3></h3>
                 <h4>$98.00</h4>
-
             </div>
-    
         </div>
-    
     </section>
 
+    <!--=============== FOOTER ==================-->
+    <footer>
+        <div class="footer-container">
+            <div class="hours-contact">
+                <ul class="contact-us">
+                    <h1>Contact Us</h1>
+                    <li>0295 698 101</li>
+                    <li>173 Parramatta Rd, Annandale NSW (near cnr Young St)</li>
+                    <li>ABN 55 116 031 611</li>
+                    <li>hi@balloons.net.au</li>
+                </ul>
+                <ul class="hours">
+                    <h2>Opening Hours</h2>
+                    <li>Mondays: 11am to 2pm</li>
+                    <li>Tuesdays-Fridays: 10am to 3:00pm</li>
+                    <li>Saturdays: 9:30am to 3:00pm</li>
+                    <li>Sundays: Closed</li>
+                    <li>Closed on public holidays</li>
+                </ul>
+            </div>
 
-
-
-<!--================================================================ FOOTER =================================================================-->
-<footer>
-    <div class="footer-container">
-        <div class="hours-contact">
-            <ul class="contact-us">
-                <h1>Contact Us</h1>
-                <li>0295 698 101</li>
-                <li>173 Parramatta Rd, Annandale NSW (near cnr young st)</li>
-                <li>ABN 55 116 031 611</li>
-                <li>hi@balloons.net.au</li>
+            <h3>About Us</h3>
+            <hr>
+            <ul class="delivery-zones">
+                <h4>Delivery Zones</h4>
+                <li>Sydney CBD</li>
+                <li>Inner West</li>
+                <li>Sydney North Shore</li>
+                <li>Eastern Suburbs</li>
+                <li>Parramatta and West</li>
             </ul>
-    
-            <ul class="hours">
-                <h2>Opening Hours</h2>
-                <li>Mondays: 11am to 2pm </li>
-                <li>Tuesdays-fridays: 10am to 3:00pm</li>
-                <li>Saturdays: 9:30am to 3:00pm</li>
-                <li>Sundays: Closed</li>
-                <li>Closed on public holidays</li>
-            </ul>
+
+            <!-- Social Icons -->
+            <div class="socials-icons">
+                <ul class="icons">
+                    <li><a href="#"><img src="icons/instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="icons/pinterest-icon.png" alt="Pinterest"></a></li>
+                    <li><a href="#"><img src="icons/youtube-icon.png" alt="YouTube"></a></li>
+                    <li><a href="#"><img src="icons/facebook-icon.png" alt="Facebook"></a></li>
+                </ul>
+            </div>
+
+            <hr>
+            <h5>Copyright © 2022 The Balloon Crew</h5>
         </div>
-
-        <h3>About Us</h3>
-        <hr>
-        <ul class="delivery-zones">
-            <h4>Delivery Zones</h4>
-            <li>Sydney CBD</li>
-            <li>Inner West</li>
-            <li>Sydney North Shore</li>
-            <li>Eastern Suburbs</li>
-            <li>Parramatta and West</li>
-        </ul>
-<!--socials icons-->
-
-        <div class="socials-icons">
-            <ul class="icons">
-                <li><a href=""><img src="icons/instagram-icon.png" alt="instagram"></a></li>
-                <li><a href=""><img src="icons/pinterest-icon.png" alt="pinterest"></a></li>
-                <li><a href=""><img src="icons/youtube-icon.png" alt="youtube"></a></li>
-                <li><a href=""><img src="icons/facebook-icon.png" alt="facebook"></a></li>
-            </ul>
-        </div>
-
-        <hr>
-        <h5>Copywright © 2022 The Balloon Crew</h5>
-    </div>
-</footer>
-
-<!-- link js file -->
-<script src="cart.js"></script>
-
+    </footer>
 </body>
 </html>

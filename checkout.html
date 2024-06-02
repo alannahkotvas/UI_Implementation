@@ -4,165 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- stylesheet file -->
     <link rel="stylesheet" href="checkout.css">
+    <!-- JavaScript file -->
     <script src="checkout.js" async></script>
-
 </head>
 <body>
-
-
     <!--=============== HEADER ====================-->
     <nav class="header">
         <div class="logo-icons-container">
             <a href="implementation.html"><img src="icons/ballooncrew logo.png" alt="Logo" class="logo"></a>
             <ul class="icons">
-                <li><a href=""><img src="icons/profile icon.png" alt="Profile"></a></li>
-                <li><a href=""><img src="icons/heart icon.png" alt="Heart"></a></li>
+                <li><a href="#"><img src="icons/profile icon.png" alt="Profile"></a></li>
+                <li><a href="#"><img src="icons/heart icon.png" alt="Heart"></a></li>
                 <li><a href="cart.html"><img src="icons/cart icon.png" alt="Cart"></a></li>
             </ul>
         </div>
     </nav>
 
-
-<!--================== NAVBAR =================-->
-<nav class="navbar">
-    <div class="toggle-button" id="toggleButton">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <ul class="nav-links" id="navLinks">
-        <li><a href="products.html">Products</a></li>
-        <li><a href="">Events</a></li>
-        <li><a href="">Product Information</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Balloon Printing</a></li>
-    </ul>
-</nav>
-
-
-<!-- ================= Checkout left page ============== -->
-
-<section class="customerdetails">
-    <form action="/action_page.php">
-        <div class="delivery-info-container">
-             <!-- ================= contact =================== -->
-        <div class="contact">
-            <label for="contact">Contact</label><br>
-            <input type="text" id="contact" name="contact" placeholder="email"><br>
-            </div>
-    
-            <!-- ================= delivery ================== -->
-           <!-- Delivery -->
-           <label for="delivery">Delivery</label><br>
-           <div class="delivery-options">
-            <div class="delivery-option">
-               <input type="radio" id="ship" name="delivery" value="ship" onclick="toggleDeliveryForm()">
-               <label for="ship">ship</label><br>
-            </div>
-            <div class=" delivery-option">
-               <input type="radio" id="pickup" name="delivery" value="pickup" onclick="toggleDeliveryForm()">
-               <label for="pickup">pick up</label><br>
-            </div>
-           </div>
-    
-           <!-- Delivery Form -->
-           <div id="deliveryForm" class="hidden">
-               <label for="billingAddress">Billing Address</label><br>
-               <input type="text" id="country" name="country" placeholder="country"><br>
-               <input type="text" id="firstName" name="firstName" placeholder="first name"><br>
-               <input type="text" id="lastName" name="lastName" placeholder="last name"><br>
-               <input type="text" id="address" name="address" placeholder="address"><br>
-               <input type="text" id="apartment" name="apartment" placeholder="apartment, suite, etc. (optional)"><br>
-               <input type="text" id="postCode" name="postCode" placeholder="post code"><br>
-           </div>
+    <!--================== NAVBAR =================-->
+    <nav class="navbar">
+        <div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Product Information</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Balloon Printing</a></li>
+        </ul>
+    </nav>
 
-<!-- ================= Checkout right page ============== -->
+    <!-- ================= Checkout left page ============== -->
+    <section class="customerdetails">
+        <form action="/action_page.php">
+            <div class="delivery-info-container">
+                <!-- ================= Contact =================== -->
+                <div class="contact">
+                    <label for="contact">Contact</label><br>
+                    <input type="text" id="contact" name="contact" placeholder="email"><br>
+                </div>
+    
+                <!-- ================= Delivery ================== -->
+                <label for="delivery">Delivery</label><br>
+                <div class="delivery-options">
+                    <div class="delivery-option">
+                        <input type="radio" id="ship" name="delivery" value="ship" onclick="toggleDeliveryForm()">
+                        <label for="ship">Ship</label><br>
+                    </div>
+                    <div class="delivery-option">
+                        <input type="radio" id="pickup" name="delivery" value="pickup" onclick="toggleDeliveryForm()">
+                        <label for="pickup">Pick Up</label><br>
+                    </div>
+                </div>
+    
+                <!-- Delivery Form -->
+                <div id="deliveryForm" class="hidden">
+                    <label for="billingAddress">Billing Address</label><br>
+                    <input type="text" id="country" name="country" placeholder="Country"><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name"><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br>
+                    <input type="text" id="address" name="address" placeholder="Address"><br>
+                    <input type="text" id="apartment" name="apartment" placeholder="Apartment, Suite, etc. (optional)"><br>
+                    <input type="text" id="postCode" name="postCode" placeholder="Post Code"><br>
+                </div>
+            </div>
 
-
-
-
-        <!-- ================= payment ==================== -->
-        <div class="payment-section-header">
-            <h1>Payment</h1>
-            <p>All transactions are secured and encrypted.</p>
-        </div>
-        <div class="card-info-container">
+            <!-- ================= Payment ==================== -->
+            <div class="payment-section-header">
+                <h1>Payment</h1>
+                <p>All transactions are secured and encrypted.</p>
+            </div>
+            <div class="card-info-container">
                 <p>Credit Card</p>
                 <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number"><br>
                 <input type="text" id="expirationdate" name="expirationdate" placeholder="Expiration Date"><br>
                 <input type="text" id="securitycode" name="securitycode" placeholder="Security Code"><br>
                 <input type="text" id="nameoncard" name="nameoncard" placeholder="Name on Card"><br>
-        </div>
+            </div>
              
-            <!-- ================== pay now button ============= 
-        <div class="paynow">
-        <a href="confirmation.html"><input type="submit" value="Pay now"></a>
-        </div>
-    -->
-        <div class="paynow"> 
-        <a href="confirmation.html">
-            <button class="paynow" type="button">Pay Now</button>
-        </a>
-        </div>
+            <!-- ================== Pay Now Button ============= -->
+            <div class="paynow">
+                <a href="confirmation.html">
+                    <button class="paynow" type="button">Pay Now</button>
+                </a>
+            </div>
+        </form> 
+    </section>
 
-    </form> 
-</section>
+    <!-- Items -->
+    <div class="products"></div>
 
-<!-- items -->
-<div class="products"> </div>
-
-
-<!-- ================== Footer ========================= -->
-<footer>
-    <div class="footer-container">
-        <div class="hours-contact">
-            <ul class="contact-us">
-                <h1>Contact Us</h1>
-                <li>0295 698 101</li>
-                <li>173 Parramatta Rd, Annandale NSW (near cnr young st)</li>
-                <li>ABN 55 116 031 611</li>
-                <li>hi@balloons.net.au</li>
-            </ul>
+    <!-- ================== Footer ========================= -->
+    <footer>
+        <div class="footer-container">
+            <div class="hours-contact">
+                <ul class="contact-us">
+                    <h1>Contact Us</h1>
+                    <li>0295 698 101</li>
+                    <li>173 Parramatta Rd, Annandale NSW (near cnr Young St)</li>
+                    <li>ABN 55 116 031 611</li>
+                    <li>hi@balloons.net.au</li>
+                </ul>
     
-            <ul class="hours">
-                <h2>Opening Hours</h2>
-                <li>Mondays: 11am to 2pm </li>
-                <li>Tuesdays-fridays: 10am to 3:00pm</li>
-                <li>Saturdays: 9:30am to 3:00pm</li>
-                <li>Sundays: Closed</li>
-                <li>Closed on public holidays</li>
+                <ul class="hours">
+                    <h2>Opening Hours</h2>
+                    <li>Mondays: 11am to 2pm</li>
+                    <li>Tuesdays-Fridays: 10am to 3:00pm</li>
+                    <li>Saturdays: 9:30am to 3:00pm</li>
+                    <li>Sundays: Closed</li>
+                    <li>Closed on public holidays</li>
+                </ul>
+            </div>
+
+            <h3>About Us</h3>
+            <hr>
+            <ul class="delivery-zones">
+                <h4>Delivery Zones</h4>
+                <li>Sydney CBD</li>
+                <li>Inner West</li>
+                <li>Sydney North Shore</li>
+                <li>Eastern Suburbs</li>
+                <li>Parramatta and West</li>
             </ul>
+            <!-- Socials Icons -->
+            <div class="socials-icons">
+                <ul class="icons">
+                    <li><a href="https://www.instagram.com/the_balloon_crew/"><img src="icons/instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.pinterest.com.au/theballooncrew/"><img src="icons/pinterest-icon.png" alt="Pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Sz9Xdeu9Kp0&list=PL4aroQt0d9Gv8_V95SNudZO-pDgVBgQ7k"><img src="icons/youtube-icon.png" alt="YouTube"></a></li>
+                    <li><a href="https://www.facebook.com/balloons.net.au/"><img src="icons/facebook-icon.png" alt="Facebook"></a></li>
+                </ul>
+            </div>
+            <hr>
+            <h5>Copyright © 2022 The Balloon Crew</h5>
         </div>
-
-        <h3>About Us</h3>
-        <hr>
-        <ul class="delivery-zones">
-            <h4>Delivery Zones</h4>
-            <li>Sydney CBD</li>
-            <li>Inner West</li>
-            <li>Sydney North Shore</li>
-            <li>Eastern Suburbs</li>
-            <li>Parramatta and West</li>
-        </ul>
-<!--socials icons-->
-
-        <div class="socials-icons">
-            <ul class="icons">
-                <li><a href="https://www.instagram.com/the_balloon_crew/"><img src="icons/instagram-icon.png" alt="instagram"></a></li>
-                <li><a href="https://www.pinterest.com.au/theballooncrew/"><img src="icons/pinterest-icon.png" alt="pinterest"></a></li>
-                <li><a href="https://www.youtube.com/watch?v=Sz9Xdeu9Kp0&list=PL4aroQt0d9Gv8_V95SNudZO-pDgVBgQ7k"><img src="icons/youtube-icon.png" alt="youtube"></a></li>
-                <li><a href="https://www.facebook.com/balloons.net.au/"><img src="icons/facebook-icon.png" alt="facebook"></a></li>
-            </ul>
-        </div>
-
-        <hr>
-        <h5>Copywright © 2022 The Balloon Crew</h5>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

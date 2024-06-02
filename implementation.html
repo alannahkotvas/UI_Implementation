@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Balloon Crew</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="implementation.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- JavaScript file -->
+    <script src="implementation.js"></script>
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <body>
-<!--=============== HEADER ====================-->
+    <!--=============== HEADER ====================-->
     <nav class="header">
-        <div class="main-logo">
-            <a href=""><img src="icons/ballooncrew logo.png" alt="Logo" class="logo"></a>
+        <!-- logo -->
+        <div class="logo-icons-container">
+            <a href="implementation.html">
+                <img src="icons/ballooncrew logo.png" alt="Logo" class="logo">
+            </a>
+            <!-- icons -->
             <ul class="icons">
-        </div>
-        <div class="icons">
-                <li><a href=""><img src="icons/profile icon.png" alt="Profile"></a></li>
-                <li><a href=""><img src="icons/heart icon.png" alt="Heart"></a></li>
+                <li><a href="#"><img src="icons/profile icon.png" alt="Profile"></a></li>
+                <li><a href="#"><img src="icons/heart icon.png" alt="Heart"></a></li>
                 <li class="cart">
-                    <a href="cart.html"><img src="icons/cart icon.png" alt="cart"><span>0</span>
+                    <a href="cart.html">
+                        <img src="icons/cart icon.png" alt="cart"><span>0</span>
                     </a>
+                </li>
             </ul>
         </div>
     </nav>
-<!--================== NAVBAR =================-->
+
+    <!--================== NAVBAR ======================-->
     <nav class="navbar">
+        <!-- toggle button/hamburger icon -->
         <div class="toggle-button" id="toggleButton">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+        <!-- list of navigation links -->
         <ul class="nav-links" id="navLinks">
             <li><a href="products.html">Products</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Product Information</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Balloon Printing</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Product Information</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Balloon Printing</a></li>
         </ul>
     </nav>
 
@@ -125,10 +136,11 @@
         <a href="https://www.google.com.au/maps/place/The+Balloon+Crew/@-33.8878881,151.1626989,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12b022ca32768b:0x2b293b8fda713f1!8m2!3d-33.8878926!4d151.1652738!16s%2Fg%2F1wyc4h97?entry=ttu" ><img src="homepage images/map.png" alt=""></a>
 </section>
 
-<!-- ================== Footer ========================= -->
+<!--================== FOOTER ======================-->
 <footer>
     <div class="footer-container">
         <div class="hours-contact">
+            <!-- Contact Information -->
             <ul class="contact-us">
                 <h1>Contact Us</h1>
                 <li>0295 698 101</li>
@@ -137,6 +149,7 @@
                 <li>hi@balloons.net.au</li>
             </ul>
     
+            <!-- Opening Hours -->
             <ul class="hours">
                 <h2>Opening Hours</h2>
                 <li>Mondays: 11am to 2pm </li>
@@ -147,8 +160,10 @@
             </ul>
         </div>
 
+        <!-- About Us -->
         <h3>About Us</h3>
         <hr>
+        <!-- Delivery Zones -->
         <ul class="delivery-zones">
             <h4>Delivery Zones</h4>
             <li>Sydney CBD</li>
@@ -157,20 +172,19 @@
             <li>Eastern Suburbs</li>
             <li>Parramatta and West</li>
         </ul>
-<!--socials icons-->
-
+        
+        <!-- Social Media Icons -->
         <div class="socials-icons">
             <ul class="icons">
-                <li><a href="https://www.instagram.com/the_balloon_crew/"><img src="icons/instagram-icon.png" alt="instagram"></a></li>
-                <li><a href="https://www.pinterest.com.au/theballooncrew/"><img src="icons/pinterest-icon.png" alt="pinterest"></a></li>
-                <li><a href="https://www.youtube.com/watch?v=Sz9Xdeu9Kp0&list=PL4aroQt0d9Gv8_V95SNudZO-pDgVBgQ7k"><img src="icons/youtube-icon.png" alt="youtube"></a></li>
-                <li><a href="https://www.facebook.com/balloons.net.au/"><img src="icons/facebook-icon.png" alt="facebook"></a></li>
+                <li><a href=""><img src="icons/instagram-icon.png" alt="instagram"></a></li>
+                <li><a href=""><img src="icons/pinterest-icon.png" alt="pinterest"></a></li>
+                <li><a href=""><img src="icons/youtube-icon.png" alt="youtube"></a></li>
+                <li><a href=""><img src="icons/facebook-icon.png" alt="facebook"></a></li>
             </ul>
         </div>
-
         <hr>
         <h5>Copywright © 2022 The Balloon Crew</h5>
     </div>
 </footer>
-<script src="implementation.js"></script>
 </body>
+</html>
