@@ -119,7 +119,7 @@
     margin: 3px 0px;
 }
 
-/* smaller screen */
+/* smaller screen */    
 @media screen and (max-width: 768px) {
     .navbar ul {
         display: flex;
@@ -164,6 +164,10 @@
     color: rgba(58, 80, 114, 1); /* Change to the desired color */
 }
 
+.search :hover{
+    transform: scale(1.05);
+}
+
 
 
 
@@ -191,11 +195,12 @@
 .cover-image h2 a{
     text-decoration: underline;
     color: rgba(58, 80, 114, 1);
-    font-weight: 500;
+    font-weight: normal;
 }
 
-.cover-image h2:hover{
-    background-color: rgb(131, 158, 189) ;
+.cover-image h2 a:hover{
+    transform: translateY(-5px);
+    font-weight: bold;
 }
 
 
@@ -305,9 +310,15 @@ div.scrollmenu a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     color: rgba(58, 80, 114, 1);
-    font-weight: bold;
+    font-weight: normal;
     padding-top: 10px;
 }
+
+.personalised-balloons h3 a:hover{
+    transform: translateY(-2px);
+    font-weight: bold;
+}
+
 
 /* ============ balloon decorations for parties ============ */
 .parties img{
@@ -341,8 +352,14 @@ div.scrollmenu a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     color: rgba(58, 80, 114, 1);
-    font-weight: bold;
+    font-weight: normal;
     padding-top: 10px;
+}
+
+
+.parties h3 a:hover{ 
+    transform: translateY(-2px);
+    font-weight: bold;
 }
 
 
@@ -423,6 +440,11 @@ div.scrollmenu a:hover {
     display: flex;
     width: 100vw;
     padding-bottom: 0px;
+}
+
+.map img:hover{
+    transform: scale(1.05);
+    filter: brightness(90%);
 }
 
 
