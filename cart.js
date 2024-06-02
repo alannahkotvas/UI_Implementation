@@ -1,12 +1,17 @@
-//navbar 
+// ==================== NAVBAR ============================ //
+
+// Get the toggle button and nav links elements
 const toggleButton = document.getElementById('toggleButton');
 const navLinks = document.getElementById('navLinks');
 
+// Add an event listener to the toggle button to show/hide nav links
 toggleButton.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-//selecting the button element
+// ==================== CART ============================= //
+
+// Selecting all elements with the class 'shop-item-button'
 let carts = document.querySelectorAll('.shop-item-button');
 
 // Define the products object
@@ -85,6 +90,7 @@ function totalCost(product, action) {
         localStorage.setItem('totalCost', cartCost + product.price);
     }
 }
+
 // Function to display the cart items
 function displayCart() {
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
@@ -94,29 +100,25 @@ function displayCart() {
     if (cartItems && productContainer) {
         productContainer.innerHTML = '';
 
-        // Using a for loop instead of Object.values
+        // Using a for loop to iterate over cartItems
         for (let key in cartItems) {
             if (cartItems.hasOwnProperty(key)) {
                 let item = cartItems[key];
                 productContainer.innerHTML += `
                 <div class='productAll'>
                     <img class="product-image" src="./cartimages/${item.tag}.png">
-                        <div class='product'>
-                            <span class="item-name">${item.name}</span>
-                            <span name="close" class="remove-item" data-tag="${item.tag}"> Remove from cart</span>
-
-                            <div class="quantity">
-                                <ion-icon class="decrease" name="remove-circle-outline" data-tag="${item.tag}"></ion-icon>
-                                <span>${item.inCart}</span>
-                                <ion-icon class="increase" name="add-circle-outline" data-tag="${item.tag}"></ion-icon>
-                            </div>
-
-                            <div class="total">
-                            ${'total cost: $' + item.inCart * item.price}
-                            </div>
-
+                    <div class='product'>
+                        <span class="item-name">${item.name}</span>
+                        <span name="close" class="remove-item" data-tag="${item.tag}"> Remove from cart</span>
+                        <div class="quantity">
+                            <ion-icon class="decrease" name="remove-circle-outline" data-tag="${item.tag}"></ion-icon>
+                            <span>${item.inCart}</span>
+                            <ion-icon class="increase" name="add-circle-outline" data-tag="${item.tag}"></ion-icon>
                         </div>
-                    
+                        <div class="total">
+                            ${'total cost: $' + item.inCart * item.price}
+                        </div>
+                    </div>
                 </div>
                 `;
             }
@@ -139,7 +141,7 @@ function manageQuantity() {
     let increaseButtons = document.querySelectorAll('.increase');
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
 
-    // for loop for decrease button
+    // Add event listeners to decrease buttons
     for (let i = 0; i < decreaseButtons.length; i++) {
         decreaseButtons[i].addEventListener('click', function() {
             let productTag = this.getAttribute('data-tag');
@@ -153,7 +155,7 @@ function manageQuantity() {
         });
     }
 
-    // for loop for increase button
+    // Add event listeners to increase buttons
     for (let i = 0; i < increaseButtons.length; i++) {
         increaseButtons[i].addEventListener('click', function() {
             let productTag = this.getAttribute('data-tag');
@@ -171,7 +173,7 @@ function deleteButtons() {
     let deleteButtons = document.querySelectorAll('.remove-item');
     let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || {};
 
-    // for loop for delete button
+    // Add event listeners to delete buttons
     for (let i = 0; i < deleteButtons.length; i++) {
         deleteButtons[i].addEventListener('click', function() {
             let productTag = this.getAttribute('data-tag');
