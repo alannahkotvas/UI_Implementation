@@ -124,7 +124,7 @@
 /* smaller screen */
 @media screen and (max-width: 800px) {
     .navbar{
-        padding: 20px 25px;
+        padding: 10px 25px;
     }
 
     .toggle-button {
@@ -189,10 +189,16 @@
     transition: 0.4s ease;
 }
 
-
-
-
-
+/* smaller size screen styling */
+@media screen and (max-width: 800px) { /* Added "px" after 800 */
+    .search-icon img {
+        max-width: 18px;      
+    }
+    .search-input {
+        font-size: 18px;
+        text-decoration-thickness: 0.1em;
+    }
+}
 
 /* ================== Homepage body =====================================*/
 /* main image*/
@@ -224,6 +230,20 @@
     font-weight: bold;
 }
 
+/* smaller size screen styling */
+@media screen and (max-width: 800px) {
+    .cover-image h1 {
+        font-size: 18px;
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+    }
+    
+    .cover-image h2 a {
+        font-size: 18px;
+        display: block; /* Change link display to block to center it */
+        text-align: center; /* Center-align the link */
+        margin: 10px auto; /* Center the link horizontally and add margin for spacing */
+    }
+}
 
 /* ============================= occasion ============================================== */
 
