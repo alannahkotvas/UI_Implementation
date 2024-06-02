@@ -11,8 +11,8 @@
     padding: 10px 20px;
 }
 
-.header img{
-    width: 150px; 
+.main-logo img{
+    width: 50px; 
 }
 
 .logo-icons-container {
@@ -45,7 +45,7 @@
 /* Add hover effect to underline the icons */
 .icons a:hover img {
     border-bottom: 2px solid black;
-    transform: translateY(-3px); /* makes the icon move up */
+    transform: translateY(-2px); /* makes the icon move up */
 }
 
 .icons a span:hover {
