@@ -142,10 +142,9 @@
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
         background-color: rgb(101, 124, 151);
         position: absolute;
-        padding: 10px; /* Adjust padding */
         top: 100%; /* Position it just below the navbar */
         left: 0;
     }
