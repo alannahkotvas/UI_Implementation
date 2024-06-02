@@ -68,20 +68,19 @@
 /* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
     text-align: center; /* Ensure text-align is center */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adding a shadow underneath the navbar */
 }
 
 .navbar ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
     height: 50px; /* Set a height for the navbar */
-
-    /* do we still need overflow: hidden; here*/
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
-
 
 .navbar a {
     font-family: "Mukta Vaani", sans-serif;
@@ -94,16 +93,46 @@
     display: block;
 }
 
-.navbar a:hover{            /*can do alot more here for dropdown etc*/
-    background-color: rgb(131, 158, 189) ;
+.navbar a:hover {
+    background-color: rgb(131, 158, 189);
     color: rgba(58, 80, 114, 1);
-    font-weight: 600 ;
+    font-weight: 600;
     transform: scale(1.05);
 }
-.navbar li{
-    float:left;
+
+.navbar li {
+    float: left;
 }
 
+/* toggle bar aka hamburger icon*/
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 3px 0px;
+}
+
+/* smaller screen */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(101, 124, 151);
+        padding: 25px; /* Adjust padding */
+        top: 100%; /* Position it just below the navbar */
+        left: 0;
+        margin-top: 0; /* Ensure ul starts from the top */
+    }
+}
 
 /* ================== search bar =========================================*/
 .search{
