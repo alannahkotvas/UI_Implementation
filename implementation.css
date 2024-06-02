@@ -1,11 +1,9 @@
 * {
     margin: 0; /* remove default padding and margin */
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 /* ================================================================= HEADER =================================================================*/
-
 .header {
     background-color: white;
     color: #fff;
@@ -15,29 +13,33 @@
     align-items: center;
 }
 
+.logo-icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .header img {
     width: 100px;
     transition: transform 0.3s; /* Smooth transition for transform */
 }
 
 .header img:hover {
-    transform: translateY(-2px); /* Slightly enlarge the logo on hover */
+    transform: translateY(-2px); /* Slightly move the logo up on hover */
 }
 
 .icons {
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
 }
 
-.icons li, .cart a {
-    margin: 0;
+.icons li {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .icons li img {
@@ -48,14 +50,14 @@
 /* Add hover effect to underline the icons */
 .icons a:hover img {
     border-bottom: 2px solid black;
-    transform: translateY(-2px); /* makes the icon move up */
+    transform: translateY(-2px); /* Make the icon move up */
 }
 
 .icons a span:hover {
     text-decoration: underline;
 }
 
-/* number of items in cart */
+/* Number of items in cart */
 .cart a, .cart a span {
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
@@ -63,6 +65,8 @@
     font-size: 15px;
     color: black;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 /* ================== navbar ===============================================*/

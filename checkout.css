@@ -77,7 +77,7 @@
     z-index: 999;
 }
 
-/* toggle bar aka hamburger icon*/
+/* toggle bar aka hamburger icon */
 .toggle-button {
     display: none;
     flex-direction: column;
@@ -85,46 +85,48 @@
 }
 
 .toggle-button .bar {
-    width: 35px;
-    height: 4px;
+    width: 20px;
+    height: 2px;
     border-radius: 5px;
     background-color: white;
     margin: 3px 0px;
 }
 
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
-.nav-links li{
+.nav-links li {
     margin-right: 25px;
     transition: 0.4s ease;
 }
 
-.nav-links li a{
-        font-family: "Mukta Vaani", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 18px;
-        color: white;
-        text-decoration: none;
-        padding: 10px 60px; /* Adjust padding for spacing */
-        display: block;
+.nav-links li a {
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding for spacing */
+    display: block;
 }
 
-.nav-links li a:hover{
-        background-color: rgb(131, 158, 189);
-        color: rgba(58, 80, 114, 1);
-        font-weight: 600;
-        transform: scale(1.05);
-        transition: 0.4s ease;
+.nav-links li a:hover {
+    background-color: rgb(131, 158, 189);
+    color: rgba(58, 80, 114, 1);
+    font-weight: 600;
+    transform: scale(1.05);
+    transition: 0.4s ease;
 }
 
 /* smaller screen */
 @media screen and (max-width: 800px) {
-    .navbar{
-        padding: 20px 25px;
+    .navbar {
+        padding: 5px 10px;
+        position: relative; 
     }
 
     .toggle-button {
@@ -139,19 +141,22 @@
         width: 100%;
         background-color: rgb(101, 124, 151);
         position: absolute;
-        padding: 25px; /* Adjust padding */
+        padding: 10px; /* Adjust padding */
         top: 100%; /* Position it just below the navbar */
         left: 0;
     }
 
-    .nav-links li{
-        padding: 12px 0px;;
+    .nav-links li {
+        padding: 12px 0px;
     }
 
-    .nav-links.active{
+    .nav-links.active {
         display: block;
     }
-
+    .navbar {
+        padding-right: 20px;
+        justify-content: end;
+    }
 }
 
 /* ==================================================== checkout ================================================ */
