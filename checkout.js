@@ -1,3 +1,11 @@
+//navbar 
+const toggleButton = document.getElementById('toggleButton');
+const navLinks = document.getElementById('navLinks');
+
+toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
 //chosing between pickup and delivery options 
 function toggleDeliveryForm() {
     let shipOption = document.getElementById("ship");
