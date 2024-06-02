@@ -143,7 +143,7 @@
         display: none;
         flex-direction: column;
         width: 100vw;
-        background-color: rgb(101, 124, 151);
+        background-color: rgb(58, 80, 114, 1);
         position: absolute;
         top: 100%; /* Position it just below the navbar */
         left: 0;
