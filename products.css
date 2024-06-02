@@ -352,6 +352,7 @@
 }
 
 /* =================== FOOTER ====================== */
+/* general style for whole footer */
 .footer-container {
     background-color: #657C97;
     padding-top: 20px;
@@ -360,11 +361,13 @@
     color: white;
 }
 
+/* opening hours*/
 .hours-contact {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap within the container */
 }
 
+/* styles for headings */
 .footer-container h1, .footer-container h2, .footer-container h3, .delivery-zones h4 {
     font-size: 30px;
     font-family: "Neuton", serif;
@@ -376,6 +379,7 @@
     padding-top: 60px;
 }
 
+/* styles for paragraphs */
 .contact-us, .hours, .delivery-zones {
     font-family: "Mukta Vaani", sans-serif;
     font-style: normal;
@@ -416,6 +420,7 @@ hr {
     width: 60px;
 }
 
+/* copyright text */
 .footer-container h5 {
     text-align: center;
     font-size: 20px;
@@ -425,6 +430,7 @@ hr {
     padding: 30px;
 }
 
+/* ----- styles for smaller screen size for footer ----- */
 @media screen and (max-width: 800px) {
     hr{
         align-self: center;

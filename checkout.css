@@ -160,7 +160,7 @@
     }
 }
 
-/* ==================================================== checkout ================================================ */
+/* ========================= checkout ============================ */
 /* the main container */
 .customerdetails{
 display: flex;
@@ -202,7 +202,6 @@ background-color: white;
     background-color: #EAEAEA;
     border: none;
     border-radius: 4px;
-
 }
 
 /* the size of radio buttons*/
@@ -278,8 +277,6 @@ background-color: white;
 }
 
 /* pay now button */
-
-
 .paynow{
     display: flex;
     background-color: rgba(58, 80, 114, 1); /* Change background color to red */
@@ -308,12 +305,13 @@ background-color: white;
     transition: 0.4s ease;
 }
 
-
+/* ----- styles for smaller screen size for checkout ----- */
 @media screen and (max-width: 800px) {
     .customerdetails{
         display: flex;
         justify-content: center;
     }
+
     .card-info-container{
         width: 300px;
     }
@@ -326,11 +324,10 @@ background-color: white;
         transform: scale(1.05);
         transition: 0.4s ease;
     }
-    
-
 }
 
 /* =================== FOOTER ====================== */
+/* general style for whole footer */
 .footer-container {
     background-color: #657C97;
     padding-top: 20px;
@@ -339,11 +336,13 @@ background-color: white;
     color: white;
 }
 
+/* opening hours*/
 .hours-contact {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap within the container */
 }
 
+/* styles for headings */
 .footer-container h1, .footer-container h2, .footer-container h3, .delivery-zones h4 {
     font-size: 30px;
     font-family: "Neuton", serif;
@@ -355,6 +354,7 @@ background-color: white;
     padding-top: 60px;
 }
 
+/* styles for paragraphs */
 .contact-us, .hours, .delivery-zones {
     font-family: "Mukta Vaani", sans-serif;
     font-style: normal;
@@ -395,6 +395,7 @@ hr {
     width: 60px;
 }
 
+/* copyright text */
 .footer-container h5 {
     text-align: center;
     font-size: 20px;
@@ -404,6 +405,7 @@ hr {
     padding: 30px;
 }
 
+/* ----- styles for smaller screen size for footer ----- */
 @media screen and (max-width: 800px) {
     hr{
         align-self: center;
