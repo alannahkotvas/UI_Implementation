@@ -18,4 +18,3 @@ function toggleDeliveryForm() {
 }
 
 
-//getting the items to appear in cart

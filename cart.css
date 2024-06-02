@@ -85,7 +85,7 @@
         font-size: 18px;
         color: white;
         text-decoration: none;
-        padding: 10px 60px; /* Adjust padding for spacing */
+        padding: 10px 60px; 
         display: block;
 }
 
@@ -115,8 +115,8 @@
         width: 100%;
         background-color: rgb(101, 124, 151);
         position: absolute;
-        padding: 25px; /* Adjust padding */
-        top: 100%; /* Position it just below the navbar */
+        padding: 25px; 
+        top: 100%; 
         left: 0;
     }
 
@@ -140,7 +140,7 @@
 
 }
 
-.product{ /*product name + removal button ;p */
+.product{ 
     display: flex;
     flex-direction: column;
     color: #657C97;

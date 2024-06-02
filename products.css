@@ -140,7 +140,7 @@
     display: block;
 }
 
-.navbar a:hover{            /*can do alot more here for dropdown etc*/
+.navbar a:hover{         
     background-color: rgb(131, 158, 189) ;
 }
 .navbar li{
