@@ -322,7 +322,7 @@ div.scrollmenu a:hover {
     }
 
     .three-sections img {
-        max-height: 150px; /* Reduce height further for smaller screens */
+        max-height: 400px; /* Reduce height further for smaller screens */
     }
 }
 
