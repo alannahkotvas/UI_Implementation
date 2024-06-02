@@ -360,17 +360,33 @@
 
 
 @media screen and (max-width: 800px) {
-        .shop-item-detail{
-            width: 100%;
-            background-color: pink;
-        }
-        .gallery{
+        .shop-item{
             display: flex;
             flex-direction: column;
-            background-color: blue;
-            width:100%;
+        }
+        .shop-item-detail{
+            width: 100%;
+        }
+        .gallery{
+            align-self: center;
+            width:50%;
             height: 20%;
         }
+        .cart-number{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .quantity-select{
+           margin-left: 45%;
+        }
+
+        .shop-item-button{
+            width: 300PX;
+            margin-left: 20%;
+        }
+
 }
 /* ====================================================== FOOTER =================================================================*/
 
