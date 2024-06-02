@@ -131,7 +131,6 @@
 
 }
 /* ====================================================== STOREPAGE 2 =================================================================*/
-/*image / background - .container contains everything within the pink section*/
 .container{
     padding-top: 5%;
     display: flex;
@@ -342,7 +341,8 @@
     height: 60%;
     margin-top: 30px;
     margin-bottom: 50px;
-    cursor: pointer;   
+    cursor: pointer;
+    
 }
 
 .shop-item-button:hover{
@@ -358,6 +358,35 @@
 }
 
 
+@media screen and (max-width: 800px) {
+        .shop-item{
+            display: flex;
+            flex-direction: column;
+        }
+        .shop-item-detail{
+            width: 100%;
+        }
+        .gallery{
+            align-self: center;
+            width:50%;
+            height: 20%;
+        }
+        .cart-number{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .quantity-select{
+           margin-left: 45%;
+        }
+
+        .shop-item-button{
+            width: 300PX;
+            margin-left: 20%;
+        }
+
+}
 /* ====================================================== FOOTER =================================================================*/
 
 .footer-container{
