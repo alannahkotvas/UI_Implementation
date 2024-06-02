@@ -64,7 +64,7 @@
 }
 
              
-/* ================== navbar ======================*/
+/* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
     display: flex;
@@ -120,7 +120,6 @@
     transform: scale(1.05);
     transition: 0.4s ease;
 }
-
 /* smaller screen */
 @media screen and (max-width: 800px) {
     .navbar {
@@ -137,10 +136,9 @@
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
-        background-color: rgb(101, 124, 151);
+        width: 100vw;
+        background-color: rgb(58, 80, 114, 1);
         position: absolute;
-        padding: 10px; /* Adjust padding */
         top: 100%; /* Position it just below the navbar */
         left: 0;
     }
@@ -349,9 +347,7 @@
     /*also add a white overlay*/
 }
 
-
-
-/* ====================================================== FOOTER =================================================================*/
+/* =================== FOOTER ====================== */
 .footer-container {
     background-color: #657C97;
     padding-top: 20px;
@@ -388,7 +384,7 @@
 }
 
 hr {
-    width: 100%; /* Ensure the horizontal line does not cause overflow */
+    width: 95%; /* Ensure the horizontal line does not cause overflow */
 }
 
 /* socials */
@@ -407,7 +403,6 @@ hr {
     padding-right: 10px;
 }
 
-
 .socials-icons .icons li {
     margin: 0;
 }
@@ -425,4 +420,12 @@ hr {
     font-weight: 300;
     padding: 30px;
 }
+
+@media screen and (max-width: 800px) {
+    hr{
+        align-self: center;
+        width:90%;
+    }
+}
+
 

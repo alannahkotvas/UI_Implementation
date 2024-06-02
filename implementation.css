@@ -125,7 +125,6 @@
     transform: scale(1.05);
     transition: 0.4s ease;
 }
-
 /* smaller screen */
 @media screen and (max-width: 800px) {
     .navbar {
@@ -598,8 +597,8 @@ div.scrollmenu a:hover {
         font-size: 15px;
     }
 }
-/* ====================================================== FOOTER =================================================================*/
 
+/* =================== FOOTER ====================== */
 .footer-container {
     background-color: #657C97;
     padding-top: 20px;

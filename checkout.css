@@ -64,8 +64,7 @@
 }
 
 
-             
-/* ================== navbar ======================*/
+/* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
     display: flex;
@@ -121,7 +120,6 @@
     transform: scale(1.05);
     transition: 0.4s ease;
 }
-
 /* smaller screen */
 @media screen and (max-width: 800px) {
     .navbar {
@@ -138,10 +136,9 @@
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
-        background-color: rgb(101, 124, 151);
+        width: 100vw;
+        background-color: rgb(58, 80, 114, 1);
         position: absolute;
-        padding: 10px; /* Adjust padding */
         top: 100%; /* Position it just below the navbar */
         left: 0;
     }
@@ -329,8 +326,7 @@ background-color: white;
 
 }
 
-/* ====================================================== FOOTER =================================================================*/
-
+/* =================== FOOTER ====================== */
 .footer-container {
     background-color: #657C97;
     padding-top: 20px;

@@ -11,7 +11,7 @@
     padding: 10px 20px;
 }
 
-/* ----- logo -----*/
+/* logo */
 .header img{
     width: 100px; 
 }
@@ -30,7 +30,7 @@
     width: 150px;
 }
 
-/* ----- icons ----- */
+/* icons */
 .icons {
     list-style-type: none;
     display: flex;
@@ -57,7 +57,7 @@
     text-decoration: underline;
 }
 
-/* ----- number of items in cart ----- */
+/* number of items in cart */
 .cart a, .cart a span {
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
@@ -66,10 +66,8 @@
     color: black;
     text-decoration: none;
 }
-
-
              
-/* ================== navbar ======================*/
+/* ===================== NAVBAR ====================== */
 .navbar {
     background-color: rgb(101, 124, 151);
     display: flex;
@@ -81,7 +79,7 @@
     z-index: 999;
 }
 
-/* ----- toggle bar aka hamburger icon -----*/
+/* toggle bar aka hamburger icon */
 .toggle-button {
     display: none;
     flex-direction: column;
@@ -126,7 +124,7 @@
     transition: 0.4s ease;
 }
 
-/* ----- responsive style for smaller size screen ----- */
+/* ------ smaller screen for NAVBAR ------ */
 @media screen and (max-width: 800px) {
     .navbar {
         padding: 5px 10px;
@@ -142,11 +140,10 @@
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
-        background-color: rgb(101, 124, 151);
+        width: 100vw;
+        background-color: rgb(58, 80, 114, 1);
         position: absolute;
-        padding: 10px; /* Adjust padding */
-        top: 100%; /* Position it just below the navbar */
+        top: 100%; 
         left: 0;
     }
 
@@ -163,8 +160,7 @@
     }
 }
 
-/* ====================================================== CART PAGE =================================================================*/
-
+/* ====================== CART PAGE ===========================*/
 .productAll{
     border-bottom: 1px solid #657C97;
     margin-left: 10%;
@@ -271,12 +267,12 @@
     margin: 40px auto 80px auto;
     font-size: 25px;
 }
-
 .btn-purchase:hover{
     transform: translateY(-5px);
     background-color: #657C97;
 }
-/* ----- responsive style for smaller size screen ----- */
+
+/* ----- responsive style for smaller size screen for cart page ----- */
 @media (max-width: 800px){
     .product{
         height: 100%;
@@ -309,55 +305,60 @@
         width: 150px;
     }
 
+    /* make button smaller */
     .btn-purchase{
         width: 80%;
     }
 }
 
-/* ====================================================== FOOTER =================================================================*/
-
-.footer-container{
+/* =================== FOOTER ====================== */
+/* general style for whole footer */
+.footer-container {
     background-color: #657C97;
     padding-top: 20px;
-    padding-left: 30px; /* change this if you dont want a gap at the top of the footer (or want a bigger gap)*/
+    padding-left: 30px;
+    margin-top: 0; /* Ensure there's no gap at the top of the footer */
     color: white;
 }
 
-.hours-contact{
+/* opening hours*/
+.hours-contact {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap within the container */
 }
 
-.footer-container h1, .footer-container h2, .footer-container h3, .delivery-zones h4{
+/* styles for headings */
+.footer-container h1, .footer-container h2, .footer-container h3, .delivery-zones h4 {
     font-size: 30px;
     font-family: "Neuton", serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.footer-container h4{
+.footer-container h4 {
     padding-top: 60px;
 }
 
-.contact-us, .hours, .delivery-zones{
+/* styles for paragraphs */
+.contact-us, .hours, .delivery-zones {
     font-family: "Mukta Vaani", sans-serif;
     font-style: normal;
     font-weight: 300;
     list-style-type: none;
     line-height: 1.8;
     height: auto;
-    width: 50%;
+    width: 100%; /* Ensure elements are responsive */
     padding-bottom: 60px;
 }
 
-hr{
-    width: 97%
+hr {
+    width: 95%; /* Ensure the horizontal line does not cause overflow */
 }
 
-/*socials*/
+/* socials */
 .socials-icons {
     display: flex;
     justify-content: space-between;
-    float: right;
     padding-right: 30px;
     padding-bottom: 30px;
 }
@@ -376,14 +377,23 @@ hr{
 
 .socials-icons .icons li img {
     height: 60px; /* Adjust the size of the icons */
-    width: 60px; 
+    width: 60px;
 }
 
-.footer-container h5{
+/* copyright text */
+.footer-container h5 {
     text-align: center;
     font-size: 20px;
     font-family: "Mukta Vaani", sans-serif;
     font-style: normal;
     font-weight: 300;
     padding: 30px;
+}
+
+/* ----- styles for smaller screen size for footer ----- */
+@media screen and (max-width: 800px) {
+    hr{
+        align-self: center;
+        width:90%;
+    }
 }
