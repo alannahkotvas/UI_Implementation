@@ -269,8 +269,26 @@ background-color: white;
 
 .paynow:hover{
     background-color: #657C97;
+    transition: 0.4s ease;
 }
 
+
+@media screen and (max-width: 800px) {
+    .card-info-container{
+        width: 300px;
+    }
+
+    .paynow{
+        width: 335px;
+    }
+    .paynow:hover{
+        background-color: #657C97;
+        transform: scale(1.05);
+        transition: 0.4s ease;
+    }
+    
+
+}
 
 /* ====================================================== FOOTER =================================================================*/
 
