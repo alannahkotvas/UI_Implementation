@@ -133,7 +133,6 @@
         display: flex;
         flex-direction: column;
         cursor: pointer;
-
     }
 
     .nav-links {
@@ -153,6 +152,10 @@
 
     .nav-links.active {
         display: block;
+    }
+    .navbar {
+        padding-right: 20px;
+        justify-content: end;
     }
 }
 
