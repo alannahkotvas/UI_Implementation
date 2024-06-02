@@ -11,18 +11,15 @@
     padding: 10px 20px;
 }
 
-.main-logo img{
-    width: 50px; 
+.header img {
+    width: 150px;
+    transition: transform 0.3s; /* Smooth transition for transform */
 }
 
 .logo-icons-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    width: 150px;
 }
 
 .icons {
