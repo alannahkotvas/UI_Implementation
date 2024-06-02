@@ -665,3 +665,10 @@ hr {
     font-weight: 300;
     padding: 30px;
 }
+
+@media screen and (max-width: 800px) {
+    hr{
+        align-self: center;
+        width:90%;
+    }
+}
