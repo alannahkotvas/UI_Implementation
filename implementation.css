@@ -255,7 +255,7 @@ div.scrollmenu a {
     flex-direction: column;
     align-items: center;
     font-family: "Mukta Vaani", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     color: rgba(58, 80, 114, 1);
     font-size: 25px;
@@ -265,7 +265,10 @@ div.scrollmenu a {
 }
   
 div.scrollmenu a:hover {
-    background-color: #f6f6f6;
+    transform: translateY(-10px);
+    filter: brightness(90%);
+    font-weight: bold;
+
 }
 
 /* ========================== 3 photos ==================================================== */
@@ -283,7 +286,7 @@ div.scrollmenu a:hover {
     flex-direction: column;
     align-items: center;
     font-family: "Mukta Vaani", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     color: rgba(58, 80, 114, 1);
     font-size: 25px;
@@ -297,6 +300,11 @@ div.scrollmenu a:hover {
     max-height: 500px; /* Limit the height to avoid squishing */
     width: auto; /* Ensure aspect ratio is maintained */
     margin: 0 10px; /* Adjust spacing between images */
+}
+
+.three-sections a:hover{
+    font-weight: bold;
+    transform: translateY(-10px);
 }
 
 /* Media query for smaller screens */
