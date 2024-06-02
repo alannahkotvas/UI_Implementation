@@ -199,7 +199,7 @@
 }
 
 .cover-image h2 a:hover{
-    transform: translateY(-5px);
+    transform: scale(1.05);
     font-weight: bold;
 }
 
@@ -249,15 +249,16 @@ div.scrollmenu a:hover {
 }
 
 /* ========================== 3 photos ==================================================== */
-.three-sections{
+.three-sections {
     background-color: white;
     overflow: auto;
     display: flex;
-    align-items: center;
+    justify-content: center; /* Center the items horizontally */
+    align-items: stretch; /* Make items stretch to the same height */
     padding-top: 100px;
 }
 
-.three-sections a{                    /* this is for the text */
+.three-sections a {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -271,11 +272,25 @@ div.scrollmenu a:hover {
     text-decoration: underline;
 }
 
-.three-sections img{
-    height: 490px;
-    padding-top: 300px;
-    padding: 0px 2px;
+.three-sections img {
+    height: 100%; /* Ensure all images have the same height */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    object-fit: cover; /* Maintain aspect ratio */
+    padding: 0px 10px; /* Adjust spacing between images */
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .three-sections {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .three-sections a {
+        margin-bottom: 20px; /* Add some spacing between the items */
+    }
+}
+
 
 
 /* ============================ personalised balloons =========================== */
@@ -315,7 +330,7 @@ div.scrollmenu a:hover {
 }
 
 .personalised-balloons h3 a:hover{
-    transform: translateY(-2px);
+    transform: scale(1.05);
     font-weight: bold;
 }
 
@@ -357,8 +372,8 @@ div.scrollmenu a:hover {
 }
 
 
-.parties h3 a:hover{ 
-    transform: translateY(-2px);
+.parties h3 a:hover{
+    transform: scale(1.05);
     font-weight: bold;
 }
 
