@@ -4,168 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Balloon Crew</title>
-    <link rel="stylesheet" href="Storepage2.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Storepage.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="cart.js"></script>
 </head>
-
-<!--=============== HEADER ====================-->
-<nav class="header">
-    <div class="logo-icons-container">
-        <a href="implementation.html"><img src="icons/ballooncrew logo.png" alt="Logo" class="logo"></a>
-        <ul class="icons">
-            <li><a href=""><img src="icons/profile icon.png" alt="Profile"></a></li>
-            <li><a href=""><img src="icons/heart icon.png" alt="Heart"></a></li>
-            <li class="cart">
-                <a href="cart.html"><img src="icons/cart icon.png" alt="cart"><span>0</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!--================== navbar ======================-->
-<nav class="navbar">
-    <div class="toggle-button" id="toggleButton">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <ul class="nav-links" id="navLinks">
-        <li><a href="products.html">Products</a></li>
-        <li><a href="">Events</a></li>
-        <li><a href="">Product Information</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Balloon Printing</a></li>
-    </ul>
-</nav>
-
-
-<!--================================================================ STOREPAGE 2 =================================================================-->
-
-<!--ship item info-->
 <body>
-    <form>
-<div class="container">
-    <div class="shop-item">
-        <div class="gallery">
-            <img class="shop-item-image" src="Product Images/PersonalisedBalloon.png" alt="personalised balloon">
-        </div>
-        <div class="shop-item-detail">
-            <span class="shop-item-title">Personalised Bubble Balloons</span>
-            <span class="shop-item-price">$75.00</span>
-            <span class="shop-item-message">Want to say something? Say it your way with our beautiful trendy custom balloon designs. Simply follow the steps to 
-                make your own personalised boutique gift.</span>
-            <span class="extra-info">Float time affected by hot and humid conditions</span> 
-<hr class="line">
-<!--text form for message wanted-->
-                <div class="custom-message">
-                    <label for="custom-message">What custom message do you want your balloon to have?</label>
-                    <br>
-                    <input class="shop-item-message" type="text" id="custom-message" placeholder="happy birthday!" maxlength="30" required>
-                </div>
 
-
-<!--colour selection section-->            
-
-                <div class="colourselect">
-                    <p>Select the colour of your custom ballon:</p>
-
-                    <label for="yellow">
-                        <input type="radio" name="colour" id="yellow" required>    
-                        <span class="colour-1"></span>
-                    </label>
-
-                    <label for="blue">
-                        <input type="radio" name="colour" id="blue">    
-                        <span class="colour-2"></span>
-                    </label>
-
-                    <label for="purple">
-                        <input type="radio" name="colour" id="purple">    
-                        <span class="colour-3"></span>
-                    </label>
-
-                    <label for="pink"> 
-                        <input type="radio" name="colour" id="pink">    
-                        <span class="colour-4"></span>
-                    </label>
-
-                    <label for="red">
-                        <input type="radio" name="colour" id="red">    
-                        <span class="colour-5"></span>
-                    </label>
-                </div>
-
-<!--text form for message wanted-->
-    <div class="special-requests">
-        <label for="special-requests">Do you have any special requests for this product?</label>
-        <br>
-        <input type="text" id="special-requests" placeholder="">
-    </div>
-        </div>
-    </div>
-</div>
-
- <!--quantity of items section-->
- <div class="cart-number">
-    <div class="quantity-select">
-        <input type="number" value="1" min="1">
-    </div>
-    
-    <!--add to cart-->
-    <button class="btn btn-primary shop-item-button" data-product="bubbleballoons">Add to Cart</button>
-
- </div>
-
-    <script src="cart.js" async></script>
-</body>          
-
-
-<!--================================================================ FOOTER =================================================================-->
-<footer>
-    <div class="footer-container">
-        <div class="hours-contact">
-            <ul class="contact-us">
-                <h1>Contact Us</h1>
-                <li>0295 698 101</li>
-                <li>173 Parramatta Rd, Annandale NSW (near cnr young st)</li>
-                <li>ABN 55 116 031 611</li>
-                <li>hi@balloons.net.au</li>
-            </ul>
-    
-            <ul class="hours">
-                <h2>Opening Hours</h2>
-                <li>Mondays: 11am to 2pm </li>
-                <li>Tuesdays-fridays: 10am to 3:00pm</li>
-                <li>Saturdays: 9:30am to 3:00pm</li>
-                <li>Sundays: Closed</li>
-                <li>Closed on public holidays</li>
-            </ul>
-        </div>
-
-        <h3>About Us</h3>
-        <hr>
-        <ul class="delivery-zones">
-            <h4>Delivery Zones</h4>
-            <li>Sydney CBD</li>
-            <li>Inner West</li>
-            <li>Sydney North Shore</li>
-            <li>Eastern Suburbs</li>
-            <li>Parramatta and West</li>
-        </ul>
-<!--socials icons-->
-
-        <div class="socials-icons">
+    <!--=============== HEADER ====================--> 
+    <nav class="header">
+        <!-- logo -->
+        <div class="logo-icons-container">
+            <a href="implementation.html">
+                <img src="icons/ballooncrew logo.png" alt="Logo" class="logo">
+            </a>
+            <!-- icons -->
             <ul class="icons">
-                <li><a href=""><img src="icons/instagram-icon.png" alt="instagram"></a></li>
-                <li><a href=""><img src="icons/pinterest-icon.png" alt="pinterest"></a></li>
-                <li><a href=""><img src="icons/youtube-icon.png" alt="youtube"></a></li>
-                <li><a href=""><img src="icons/facebook-icon.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="icons/profile icon.png" alt="Profile"></a></li>
+                <li><a href="#"><img src="icons/heart icon.png" alt="Heart"></a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <img src="icons/cart icon.png" alt="cart"><span>0</span>
+                    </a>
+                </li>
             </ul>
         </div>
+    </nav>
 
-        <hr>
-        <h5>Copywright © 2022 The Balloon Crew</h5>
-    </div>
-</footer>
+    <!--================== NAVBAR ======================-->
+    <nav class="navbar">
+        <!-- toggle button/hamburger icon -->
+        <div class="toggle-button" id="toggleButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- list of navigation links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Product Information</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Balloon Printing</a></li>
+        </ul>
+    </nav>
+
+<!--====================== STOREPAGE 2 =========================-->
+<!-- item info -->
+    <form>
+        <div class="container">
+            <div class="shop-item">
+                <!-- Product Gallery -->
+                <div class="gallery">
+                    <img class="shop-item-image" src="Product Images/PersonalisedBalloon.png" alt="personalised balloon">
+                </div>
+                <!-- Product Details -->
+                <div class="shop-item-detail">
+                    <span class="shop-item-title">Personalised Bubble Balloons</span>
+                    <span class="shop-item-price">$75.00</span>
+                    <span class="shop-item-message">Want to say something? Say it your way with our beautiful trendy custom balloon designs. Simply follow the steps to 
+                        make your own personalised boutique gift.</span>
+                    <span class="extra-info">Float time affected by hot and humid conditions</span>
+                    <!-- Custom Message Form -->
+                    <hr class="line">
+                    <div class="custom-message">
+                        <label for="custom-message">What custom message do you want your balloon to have?</label>
+                        <br>
+                        <input class="shop-item-message" type="text" id="custom-message" placeholder="happy birthday!" maxlength="30" required>
+                    </div>
+                    <!-- Colour Selection -->
+                    <div class="colourselect">
+                        <p>Select the colour of your custom balloon:</p>
+                        <label for="yellow">
+                            <input type="radio" name="colour" id="yellow" required>    
+                            <span class="colour-1"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="colour" id="blue">    
+                            <span class="colour-2"></span>
+                        </label>
+                        <label for="purple">
+                            <input type="radio" name="colour" id="purple">    
+                            <span class="colour-3"></span>
+                        </label>
+                        <label for="pink"> 
+                            <input type="radio" name="colour" id="pink">    
+                            <span class="colour-4"></span>
+                        </label>
+                        <label for="red">
+                            <input type="radio" name="colour" id="red">    
+                            <span class="colour-5"></span>
+                        </label>
+                    </div>
+                    <!-- Special Requests -->
+                    <div class="special-requests">
+                        <label for="special-requests">Do you have any special requests for this product?</label>
+                        <br>
+                        <input type="text" id="special-requests" placeholder="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quantity Selection -->
+        <div class="cart-number">
+            <div class="quantity-select">
+                <input type="number" value="1" min="1">
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="btn btn-primary shop-item-button" data-product="bubbleballoons">Add to Cart</button>
+        </div>
+    </form>
+
+    <!--================================================================ FOOTER =================================================================-->
+    <footer>
+        <div class="footer-container">
+            <div class="hours-contact">
+                <ul class="contact-us">
+                    <h1>Contact Us</h1>
+                    <li>0295 698 101</li>
+                    <li>173 Parramatta Rd, Annandale NSW (near cnr young st)</li>
+                    <li>ABN 55 116 031 611</li>
+                    <li>hi@balloons.net.au</li>
+                </ul>
+        
+                <ul class="hours">
+                    <h2>Opening Hours</h2>
+                    <li>Mondays: 11am to 2pm </li>
+                    <li>Tuesdays-fridays: 10am to 3:00pm</li>
+                    <li>Saturdays: 9:30am to 3:00pm</li>
+                    <li>Sundays: Closed</li>
+                    <li>Closed on public holidays</li>
+                </ul>
+            </div>
+
+            <h3>About Us</h3>
+            <hr>
+            <ul class="delivery-zones">
+                <h4>Delivery Zones</h4>
+                <li>Sydney CBD</li>
+                <li>Inner West</li>
+                <li>Sydney North Shore</li>
+                <li>Eastern Suburbs</li>
+                <li>Parramatta and West</li>
+            </ul>
+    <!--socials icons-->
+
+            <div class="socials-icons">
+                <ul class="icons">
+                    <li><a href=""><img src="icons/instagram-icon.png" alt="instagram"></a></li>
+                    <li><a href=""><img src="icons/pinterest-icon.png" alt="pinterest"></a></li>
+                    <li><a href=""><img src="icons/youtube-icon.png" alt="youtube"></a></li>
+                    <li><a href=""><img src="icons/facebook-icon.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+
+            <hr>
+            <h5>Copywright © 2022 The Balloon Crew</h5>
+        </div>
+    </footer>
+</body>
+</html>
