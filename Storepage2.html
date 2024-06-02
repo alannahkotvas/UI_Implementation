@@ -26,7 +26,12 @@
 </nav>
 <!--================== navbar ======================-->
 <nav class="navbar">
-    <ul>
+    <div class="toggle-button" id="toggleButton">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
         <li><a href="products.html">Products</a></li>
         <li><a href="">Events</a></li>
         <li><a href="">Product Information</a></li>
@@ -34,6 +39,7 @@
         <li><a href="">Balloon Printing</a></li>
     </ul>
 </nav>
+
 
 <!--================================================================ STOREPAGE 2 =================================================================-->
 
@@ -104,16 +110,15 @@
  <!--quantity of items section-->
  <div class="cart-number">
     <div class="quantity-select">
-        <input type="number" value="1">
+        <input type="number" value="1" min="1">
     </div>
     
     <!--add to cart-->
     <button class="btn btn-primary shop-item-button" data-product="bubbleballoons">Add to Cart</button>
 
  </div>
-    
-    <script src="cart.js" async></script>
 
+    <script src="cart.js" async></script>
 </body>          
 
 
