@@ -153,6 +153,10 @@
     .nav-links.active {
         display: block;
     }
+    .navbar {
+        padding-right: 20px;
+        justify-content: end;
+    }
 }
 
 /* ================== search bar ========================================= */
@@ -629,7 +633,7 @@ div.scrollmenu a:hover {
 }
 
 hr {
-    width: 100%; /* Ensure the horizontal line does not cause overflow */
+    width: 95%; /* Ensure the horizontal line does not cause overflow */
 }
 
 /* socials */
