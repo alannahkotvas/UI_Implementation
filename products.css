@@ -90,6 +90,10 @@
 
 
 /* ============================ DROPDOWN MENU ================================ Just need to center the text on the left ;p */
+.item-count{
+    padding-left: 30px;
+}
+
 .dropdown-all{
     display: block;
     color: #657C97;
@@ -164,22 +168,21 @@
 /* ============================ PRODUCTS ================================*/
 
  section{
-    padding: 100px 8%;
+    padding: 5%;
  }
 
  .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, auto)); /*edit grid to be 4 per row*/
-    align-items: last baseline;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto)); 
     gap: 3rem;
+    color: #657C97;
     text-align: left;
     cursor: pointer;
-    padding-top: 3rem;
-  
  }
 
 .box{
-    padding: 0px, 20px 10px 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
     background: transparent;
     box-shadow: none;
     border-radius: 10px;
@@ -187,14 +190,15 @@
     transition: all 0.35s ease;
     font-family: "Mukta Vaani, sans-serif";
     color: #3A5072;
+    border: 1px solid #657C97;
 }
 
 
 .box img{
+    justify-self: center;
     width: auto;
     height: 470px;
     border-bottom: 1px solid rgb(101, 124, 151);
-
 }
 
  .box h2{
