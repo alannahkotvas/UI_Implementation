@@ -38,8 +38,18 @@
 }
 
 .icons li img {
-    height: 30px; /* Adjust the size of the icons */
-    width: 30px; 
+    height: 25px; /* Adjust the size of the icons */
+    width: 25px; 
+}
+
+/* Add hover effect to underline the icons */
+.icons a:hover img {
+    border-bottom: 2px solid black;
+    transform: translateY(-3px); /* makes the icon move up */
+}
+
+.icons a span:hover {
+    text-decoration: underline;
 }
 
 /* number if item in cart */
@@ -51,7 +61,6 @@
     color: black;
     text-decoration: none;
 }
-
 /* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
