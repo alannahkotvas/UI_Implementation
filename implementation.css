@@ -9,18 +9,20 @@
     background-color: white;
     color: #fff;
     padding: 10px 20px;
-}
-
-.header img {
-    width: 150px;
-    transition: transform 0.3s; /* Smooth transition for transform */
-}
-
-.logo-icons-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.header img {
+    width: 100px;
+    transition: transform 0.3s; /* Smooth transition for transform */
+}
+
+.header img:hover {
+    transform: translateY(-2px); /* Slightly enlarge the logo on hover */
+}
+
 
 .icons {
     list-style-type: none;
@@ -30,13 +32,17 @@
     padding: 0;
 }
 
-.icons li {
+.icons li, .cart a{
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .icons li img {
-    height: 25px; /* Adjust the size of the icons */
-    width: 25px; 
+    height: 20px; /* Adjust the size of the icons */
+    width: 20px; 
 }
 
 /* Add hover effect to underline the icons */
@@ -50,7 +56,7 @@
 }
 
 /* number if item in cart */
-.cart a, .cart a span{
+.cart a, .cart a span {
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -58,10 +64,12 @@
     color: black;
     text-decoration: none;
 }
+
 /* ================== navbar ===============================================*/
 .navbar {
     background-color: rgb(101, 124, 151);
     text-align: center; /* Ensure text-align is center */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adding a shadow underneath the navbar */
 }
 
 .navbar ul {
@@ -88,6 +96,9 @@
 
 .navbar a:hover{            /*can do alot more here for dropdown etc*/
     background-color: rgb(131, 158, 189) ;
+    color: rgba(58, 80, 114, 1);
+    font-weight: 600 ;
+    transform: scale(1.05);
 }
 .navbar li{
     float:left;
