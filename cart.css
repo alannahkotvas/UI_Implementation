@@ -76,6 +76,14 @@
     float:left;
 }
 
+@media (max-width: 800px){
+    .navbar {
+        text-align: center; /* Ensure text-align is center */
+        overflow-x: scroll; 
+    }
+}
+
+
 /* ====================================================== CART PAGE =================================================================*/
 
 .productAll{
@@ -108,11 +116,11 @@
     border: 1px solid #3A5072;
     position: absolute;
     align-items: center;
-    bottom: 50px;
+    bottom: 10%;
     border-radius: 4px;
-    padding: 10px;
-    padding-left: 180px;
-    width: 300px;
+    padding: 1%;
+    padding-left: 15%;
+    width: 25%;
     align-items: center;
 }
 
@@ -124,7 +132,6 @@
     padding-left: 10%;
     display: flex;
     width:20%;
-    padding-right: 30px;
 }
 .product img{
     width: 40%;
@@ -136,8 +143,7 @@
     justify-content: center;
     align-self: end;
     margin-left: auto;
-    height: 35px;
-    width:100px;
+    width:20%;
     border: none;
     background-color: white;
     color: #3A5072;
@@ -157,6 +163,7 @@
     font-size: 30px;
     font-weight: BOLD;
     color: #3A5072;
+
 }
 
 .basketTotal{
@@ -188,6 +195,47 @@
 
 .btn-purchase:hover{
     transform: translateY(-5px);
+    background-color: #657C97;
+}
+
+/* mobile view - remove button , price , quantity adjustments*/
+@media (max-width: 800px){
+    .product{
+        height: 100%;
+        padding-left: 5%;
+    }
+
+    .quantity{
+        display: flex;
+        margin-right: 1%;
+        font-size: 20px;
+    }
+    
+    .item-name{
+        font-size: 25px;
+    }
+
+
+
+    .product-image{
+        width: 30%;
+        height: 30%;
+        padding-left: 1%;
+    }
+
+    .total{
+        display: flex;
+        align-self:baseline;
+        font-size: 20px;
+    }
+
+    .remove-item{
+        width: 150px;
+    }
+
+    .btn-purchase{
+        width: 80%;
+    }
 }
 
 /* ====================================================== FOOTER =================================================================*/
