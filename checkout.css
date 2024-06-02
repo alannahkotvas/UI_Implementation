@@ -195,30 +195,27 @@ background-color: white;
 }
 
 /* pay now button */
-.paynow {
-    padding-top: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 50px;
-}
 
-.paynow input[type="submit"] {
+
+.paynow{
+    display: flex;
     background-color: rgba(58, 80, 114, 1); /* Change background color to red */
     color: white;
+    text-decoration: none;
     font-family: "Neuton", serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 25px;
     width: 600px;
     height: 60px;
-    display: flex;
+    align-items: center;
     justify-content: center;
     border-radius: 4px;
     border: none;
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 
-.paynow input:hover{
+.paynow:hover{
     background-color: #657C97;
 }
 
