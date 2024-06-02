@@ -44,6 +44,8 @@
 /* ================== navbar ======================*/
 .navbar {
     background-color: rgb(101, 124, 151);
+    width: 100%;
+    height: auto;
     text-align: center; /* Ensure text-align is center */
 }
 
@@ -52,7 +54,7 @@
     display: flex;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
-    height: 50px; /* Set a height for the navbar */
+    height: 50%; /* Set a height for the navbar */
 
     /* do we still need overflow: hidden; here*/
 }
@@ -84,14 +86,21 @@
 }
 
 .title{
+    color:#657C97;
     text-align: center;
+    padding-top: 2%;
     padding-bottom: 30px;
+}
+
+.title h1{
+    color: #3A5072;
+    padding-bottom: 20px;
 }
 
 
 /* ============================ DROPDOWN MENU ================================ Just need to center the text on the left ;p */
 .item-count{
-    padding-left: 30px;
+    padding-left: 10%;
 }
 
 .dropdown-all{
@@ -124,7 +133,7 @@
 
 .dropdown-menu button{
     color: #657C97;
-    width: 250px;
+    width: 200%;
     background-color: white;
     border: none;
     border-left: 1px solid #657C97;
@@ -195,7 +204,6 @@
 
 
 .box img{
-    justify-self: center;
     width: auto;
     height: 470px;
     border-bottom: 1px solid rgb(101, 124, 151);
