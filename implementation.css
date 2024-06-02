@@ -60,7 +60,7 @@
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     text-decoration: none;
 }
@@ -273,8 +273,8 @@ div.scrollmenu a:hover {
     background-color: white;
     overflow: auto;
     display: flex;
-    justify-content: center; /* Center the items horizontally */
-    align-items: stretch; /* Make items stretch to the same height */
+    justify-content: space-around; /* Equal spacing between items */
+    align-items: center; /* Center items vertically */
     padding-top: 100px;
 }
 
@@ -293,10 +293,10 @@ div.scrollmenu a:hover {
 }
 
 .three-sections img {
-    height: 100%; /* Ensure all images have the same height */
     max-width: 100%; /* Ensure image doesn't exceed container width */
-    object-fit: cover; /* Maintain aspect ratio */
-    padding: 0px 10px; /* Adjust spacing between images */
+    max-height: 500px; /* Limit the height to avoid squishing */
+    width: auto; /* Ensure aspect ratio is maintained */
+    margin: 0 10px; /* Adjust spacing between images */
 }
 
 /* Media query for smaller screens */
@@ -308,6 +308,10 @@ div.scrollmenu a:hover {
 
     .three-sections a {
         margin-bottom: 20px; /* Add some spacing between the items */
+    }
+
+    .three-sections img {
+        max-height: 150px; /* Reduce height further for smaller screens */
     }
 }
 
