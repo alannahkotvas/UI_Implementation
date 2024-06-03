@@ -35,7 +35,6 @@ for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         // Get the product tag from the data attribute
         let productTag = carts[i].getAttribute('data-product');
-        // Update cart numbers and total cost
         cartNumbers(products[productTag]);
         totalCost(products[productTag]);
     });

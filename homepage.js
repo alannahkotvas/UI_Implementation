@@ -34,32 +34,6 @@ toggleButton.addEventListener('click', () => {
 // Selecting all elements with the class 'shop-item-button'
 let carts = document.querySelectorAll('.shop-item-button');
 
-// Define the products object
-let products = {
-    'bubbleballoons': {
-        name: 'Personalised Bubble Balloon',
-        tag: 'bubbleballoons',
-        price: 75,
-        inCart: 0
-    },
-    'birthdayballoons': {
-        name: 'Birthday Balloons',
-        tag: 'birthdayballoons',
-        price: 99,
-        inCart: 0
-    }
-};
-
-// Add event listeners to each cart button using a for loop
-for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener('click', () => {
-        // Get the product tag from the data attribute
-        let productTag = carts[i].getAttribute('data-product');
-        // Update cart numbers 
-        cartNumbers(products[productTag]);
-    });
-}
-
 // Function to update the number next to the cart icon when the page loads
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers');
