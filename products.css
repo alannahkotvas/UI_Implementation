@@ -43,8 +43,9 @@
     margin: 0;
 }
 
+/* Adjust the size of the icons */
 .icons li img {
-    height: 20px; /* Adjust the size of the icons */
+    height: 20px; 
     width: 20px; 
 }
 
@@ -71,9 +72,9 @@
 .navbar {
     background-color: rgb(101, 124, 151);
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    text-align: center; /* Ensure text-align is center */
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adding a shadow underneath the navbar */
     position: relative;
     z-index: 999;
@@ -112,7 +113,7 @@
     font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Adjust padding for spacing */
+    padding: 10px 20px; 
     display: block;
 }
 
@@ -161,8 +162,6 @@
 }
 
 /* =========================================== INTRODUCTION ================================================*/
-/*work on this sizing girl*/
-
 .introImage img{
    width: 100vw;
 }
@@ -179,7 +178,7 @@
     padding-bottom: 20px;
 }
 
-/* ============================ DROPDOWN MENU ================================ Just need to center the text on the left ;p */
+/* ============================ DROPDOWN MENU ================================ */
 .item-count{
     padding-left: 10%;
 }
@@ -338,7 +337,6 @@ margin-bottom: 8px;
 
  .box:hover{
     transform: translateY(-15px);
-    /*also add a white overlay*/
 }
 
 /* =================== FOOTER ====================== */
@@ -347,7 +345,7 @@ margin-bottom: 8px;
     background-color: #657C97;
     padding-top: 20px;
     padding-left: 30px;
-    margin-top: 0; /* Ensure there's no gap at the top of the footer */
+    margin-top: 0; 
     color: white;
 }
 
@@ -377,12 +375,12 @@ margin-bottom: 8px;
     list-style-type: none;
     line-height: 1.8;
     height: auto;
-    width: 100%; /* Ensure elements are responsive */
+    width: 100%; 
     padding-bottom: 60px;
 }
 
 hr {
-    width: 95%; /* Ensure the horizontal line does not cause overflow */
+    width: 95%; /*  horizontal line does not overflow */
 }
 
 /* socials */

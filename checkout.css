@@ -71,9 +71,9 @@
 .navbar {
     background-color: rgb(101, 124, 151);
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    text-align: center; /* Ensure text-align is center */
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adding a shadow underneath the navbar */
     position: relative;
     z-index: 999;
@@ -94,6 +94,7 @@
     margin: 3px 0px;
 }
 
+/* navigation list */
 .nav-links {
     list-style: none;
     display: flex;
@@ -112,7 +113,7 @@
     font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Adjust padding for spacing */
+    padding: 10px 20px; 
     display: block;
 }
 
@@ -222,8 +223,8 @@ background-color: white;
 
 .delivery-options {
     display: flex;
-    flex-direction: column;/* Use column direction to stack options vertically */
-    padding-bottom: 25px; /*distance between billing address and pick up box */
+    flex-direction: column;/* column direction to stack options vertically */
+    padding-bottom: 25px; /* distance between billing address and pick up box */
 }
 
 .delivery-option {
@@ -235,8 +236,7 @@ background-color: white;
     align-items: center;
 }
 
-/* billing address */
-
+/* Billing address */
 .payment-section-header{
     padding-top: 25px;
 
@@ -253,6 +253,7 @@ background-color: white;
     font-size: 15px;
 }
 
+/* credit card */
 .card-info-container{
     display: flex;
     flex-direction: column;
@@ -279,7 +280,7 @@ background-color: white;
 /* pay now button */
 .paynow{
     display: flex;
-    background-color: rgba(58, 80, 114, 1); /* Change background color to red */
+    background-color: rgba(58, 80, 114, 1); 
     color: white;
     text-decoration: none;
     font-family: "Neuton", serif;
@@ -332,7 +333,7 @@ background-color: white;
     background-color: #657C97;
     padding-top: 20px;
     padding-left: 30px;
-    margin-top: 0; /* Ensure there's no gap at the top of the footer */
+    margin-top: 0; 
     color: white;
 }
 
@@ -362,12 +363,12 @@ background-color: white;
     list-style-type: none;
     line-height: 1.8;
     height: auto;
-    width: 100%; /* Ensure elements are responsive */
+    width: 100%; 
     padding-bottom: 60px;
 }
 
 hr {
-    width: 95%; /* Ensure the horizontal line does not cause overflow */
+    width: 95%; /* so that horizontal line does not overflow */
 }
 
 /* socials */
@@ -390,8 +391,9 @@ hr {
     margin: 0;
 }
 
+/* Adjust the size of the icons */
 .socials-icons .icons li img {
-    height: 60px; /* Adjust the size of the icons */
+    height: 60px;
     width: 60px;
 }
 

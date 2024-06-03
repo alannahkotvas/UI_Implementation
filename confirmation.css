@@ -71,9 +71,9 @@
 .navbar {
     background-color: rgb(101, 124, 151);
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    text-align: center; /* Ensure text-align is center */
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adding a shadow underneath the navbar */
     position: relative;
     z-index: 999;
@@ -94,6 +94,7 @@
     margin: 3px 0px;
 }
 
+/* navigation list */
 .nav-links {
     list-style: none;
     display: flex;
@@ -112,7 +113,7 @@
     font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Adjust padding for spacing */
+    padding: 10px 20px; 
     display: block;
 }
 
@@ -210,8 +211,8 @@
 @media screen and (max-width: 800px) {
     .container img {
         max-width: 100%;
-        height: auto; 
-        width: auto; /* Prevent the image from overflowing */
+        height: auto; /* prevent the image from overflowing */
+        width: auto; /* prevent the image from overflowing */
     }
     .container h1{
         font-size: 30px;
@@ -228,7 +229,7 @@
     background-color: #657C97;
     padding-top: 20px;
     padding-left: 30px;
-    margin-top: 0; /* Ensure there's no gap at the top of the footer */
+    margin-top: 0; 
     color: white;
 }
 
@@ -258,12 +259,12 @@
     list-style-type: none;
     line-height: 1.8;
     height: auto;
-    width: 100%; /* Ensure elements are responsive */
+    width: 100%; 
     padding-bottom: 60px;
 }
 
 hr {
-    width: 95%; /* Ensure the horizontal line does not cause overflow */
+    width: 95%; 
 }
 
 /* socials */
@@ -286,8 +287,9 @@ hr {
     margin: 0;
 }
 
+/* Adjust the size of the icons */
 .socials-icons .icons li img {
-    height: 60px; /* Adjust the size of the icons */
+    height: 60px; 
     width: 60px;
 }
 
