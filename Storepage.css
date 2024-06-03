@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-/* ============== HEADER =============== */
+/* =================== HEADER ====================== */
 .header {
     background-color: white;
     color: #fff;
@@ -160,7 +160,7 @@
     }
 }
 
-/* ==================== STOREPAGE ======================*/
+/* ==================== STOREPAGE ====================== */
 .container{
     padding-top: 5%;
     display: flex;
@@ -359,7 +359,6 @@
     align-items: center;
 }
 
-
 .shop-item-button {
     margin-top: 20px;
     margin-left: 50%; /* Optional: Add space between the form content and the button */
@@ -406,7 +405,7 @@
     }
 }
 
- /* =================== FOOTER ====================== */
+/* =================== FOOTER ====================== */
 /* general style for whole footer */
 .footer-container {
     background-color: #657C97;

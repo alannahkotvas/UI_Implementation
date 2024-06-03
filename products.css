@@ -179,7 +179,6 @@
     padding-bottom: 20px;
 }
 
-
 /* ============================ DROPDOWN MENU ================================ Just need to center the text on the left ;p */
 .item-count{
     padding-left: 10%;
@@ -194,7 +193,6 @@
     border-top: 1px solid #657C97;
     border-bottom: 1px solid #657C97;
     font-size: 25px;
-
 }
 
  .dropdown-menu{
@@ -257,7 +255,6 @@
     z-index: 900;
 }
 
-
 @media (max-width: 800px){
     .dropdown-all{
         font-size: 20px;
@@ -276,9 +273,7 @@
     }
 }
 
-
 /* ============================ PRODUCTS ================================*/
-
  section{
     padding: 5%;
  }
@@ -305,37 +300,32 @@
     border: 1px solid #657C97;
 }
 
-
 .box img{
     width: auto;
     height: 470px;
     border-bottom: 1px solid rgb(101, 124, 151);
 }
 
- .box h2{
-    font-size: auto;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
- 
-    
- }
+.box h2{
+font-size: auto;
+letter-spacing: 1px;
+margin-bottom: 8px; 
+}
 
- .box h3{
-    font-size: auto;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-    
- }
+.box h3{
+font-size: auto;
+letter-spacing: 1px;
+margin-bottom: 8px;
+}
 
- .box h4{
-    font-size: auto;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-    
- }
+.box h4{
+font-size: auto;
+letter-spacing: 1px;
+margin-bottom: 8px;
+}
 
- /* cart icon - optional - only exists so long as .box exists */
- .box .cart img{
+/* cart icon - optional - only exists so long as .box exists */
+.box .cart img{
     position: absolute;
     top: 1;
     left: 300px;
@@ -344,7 +334,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
  .box:hover{
     transform: translateY(-15px);
